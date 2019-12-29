@@ -6,6 +6,7 @@ class ShoppingsController < ApplicationController
   
   def create
     @shop = Shopping.new(shopping_params)
+    @shop.image.attach(params[:shopping][:image])
     if @shop.save
       flash[:success] = "Item Successfully added"
       redirect_to shoppings_path(@shop)
@@ -48,7 +49,7 @@ class ShoppingsController < ApplicationController
   private
   
   def shopping_params
-    params.require(:shopping).permit(:item)
+    params.require(:shopping).permit(:item, :image)
   end
   
 end

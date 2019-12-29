@@ -6,6 +6,7 @@
 <div class="well">
 <p class="itemsFont">
   <span class="boldText">Item:</span> <%= @shop.item %>
+ <%= image_tag @shop.image if @shop.image.attached? %>
 </p>
 
 <%= link_to "Edit this item", edit_shopping_path(@shop), class: "btn btn-warning" %> |

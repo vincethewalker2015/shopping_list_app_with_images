@@ -120,3 +120,1821 @@ Processing by ShoppingsController#index as
 Completed 200 OK in 235ms (Views: 196.9ms | ActiveRecord: 0.2ms)
 
 
+DEPRECATION WARNING: Leaving `ActiveRecord::ConnectionAdapters::SQLite3Adapter.represent_boolean_as_integer`
+set to false is deprecated. SQLite databases have used 't' and 'f' to serialize
+boolean values and must have old data converted to 1 and 0 (its native boolean
+serialization) before setting this flag to true. Conversion can be accomplished
+by setting up a rake task which runs
+
+  ExampleModel.where("boolean_column = 't'").update_all(boolean_column: 1)
+  ExampleModel.where("boolean_column = 'f'").update_all(boolean_column: 0)
+
+for all models and all boolean columns, after which the flag must be set to
+true by adding the following to your application.rb file:
+
+  Rails.application.config.active_record.sqlite3.represent_boolean_as_integer = true
+ (called from require at /Users/vincethewalker/ruby/shopping_list_app_with_images/bin/rails:9)
+DEPRECATION WARNING: Leaving `ActiveRecord::ConnectionAdapters::SQLite3Adapter.represent_boolean_as_integer`
+set to false is deprecated. SQLite databases have used 't' and 'f' to serialize
+boolean values and must have old data converted to 1 and 0 (its native boolean
+serialization) before setting this flag to true. Conversion can be accomplished
+by setting up a rake task which runs
+
+  ExampleModel.where("boolean_column = 't'").update_all(boolean_column: 1)
+  ExampleModel.where("boolean_column = 'f'").update_all(boolean_column: 0)
+
+for all models and all boolean columns, after which the flag must be set to
+true by adding the following to your application.rb file:
+
+  Rails.application.config.active_record.sqlite3.represent_boolean_as_integer = true
+ (called from require at /Users/vincethewalker/ruby/shopping_list_app_with_images/bin/rails:9)
+  [1m[35m (12.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateActiveStorageTables (20191229151010)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE TABLE "active_storage_blobs" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "key" varchar NOT NULL, "filename" varchar NOT NULL, "content_type" varchar, "metadata" text, "byte_size" bigint NOT NULL, "checksum" varchar NOT NULL, "created_at" datetime NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_active_storage_blobs_on_key" ON "active_storage_blobs" ("key")[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE TABLE "active_storage_attachments" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar NOT NULL, "record_type" varchar NOT NULL, "record_id" integer NOT NULL, "blob_id" integer NOT NULL, "created_at" datetime NOT NULL, CONSTRAINT "fk_rails_c3b3935057"
+FOREIGN KEY ("blob_id")
+  REFERENCES "active_storage_blobs" ("id")
+)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE  INDEX "index_active_storage_attachments_on_blob_id" ON "active_storage_attachments" ("blob_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_active_storage_attachments_uniqueness" ON "active_storage_attachments" ("record_type", "record_id", "name", "blob_id")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20191229151010"]]
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/shoppings/new" for ::1 at 2019-12-29 15:21:34 +0000
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ShoppingsController#new as HTML
+  Rendering shoppings/new.html.erb within layouts/application
+  Rendered shoppings/_error.html.erb (0.4ms)
+  Rendered layouts/_flash.html.erb (0.4ms)
+  Rendered shoppings/_form.html.erb (1.9ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+  Rendered shoppings/new.html.erb within layouts/application (14.6ms)
+  Rendered layouts/_navBar.html.erb (0.7ms)
+Completed 200 OK in 176ms (Views: 126.2ms | ActiveRecord: 0.6ms)
+
+
+DEPRECATION WARNING: Leaving `ActiveRecord::ConnectionAdapters::SQLite3Adapter.represent_boolean_as_integer`
+set to false is deprecated. SQLite databases have used 't' and 'f' to serialize
+boolean values and must have old data converted to 1 and 0 (its native boolean
+serialization) before setting this flag to true. Conversion can be accomplished
+by setting up a rake task which runs
+
+  ExampleModel.where("boolean_column = 't'").update_all(boolean_column: 1)
+  ExampleModel.where("boolean_column = 'f'").update_all(boolean_column: 0)
+
+for all models and all boolean columns, after which the flag must be set to
+true by adding the following to your application.rb file:
+
+  Rails.application.config.active_record.sqlite3.represent_boolean_as_integer = true
+ (called from instance_eval at /Users/vincethewalker/.rvm/gems/ruby-2.5.0/gems/activesupport-5.2.3/lib/active_support/lazy_load_hooks.rb:71)
+Started GET "/shoppings/new" for ::1 at 2019-12-29 15:30:21 +0000
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ShoppingsController#new as HTML
+  Rendering shoppings/new.html.erb within layouts/application
+  Rendered shoppings/_error.html.erb (0.8ms)
+  Rendered layouts/_flash.html.erb (0.5ms)
+  Rendered shoppings/_form.html.erb (91.4ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+  Rendered shoppings/new.html.erb within layouts/application (104.4ms)
+  Rendered layouts/_navBar.html.erb (1.0ms)
+Completed 200 OK in 603ms (Views: 585.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/shoppings/new" for ::1 at 2019-12-29 15:31:07 +0000
+Processing by ShoppingsController#new as HTML
+  Rendering shoppings/new.html.erb within layouts/application
+  Rendered shoppings/_error.html.erb (0.5ms)
+  Rendered layouts/_flash.html.erb (1.2ms)
+  Rendered shoppings/_form.html.erb (24.6ms)
+  Rendered shoppings/new.html.erb within layouts/application (40.7ms)
+Completed 500 Internal Server Error in 53ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `merge' for :image:Symbol):
+     7:           <%= f.label :Add_item %><br />
+     8:           <%= f.text_field :item, class: "bdr-frm" %>
+     9:           <span clas="image">
+    10:             <%= f.file_field "Select Image" , :image %>
+    11:           </span>
+    12:         </p>
+    13:       <p>
+  
+app/views/shoppings/_form.html.erb:10:in `block in _app_views_shoppings__form_html_erb__823530946107227639_70301330822340'
+app/views/shoppings/_form.html.erb:5:in `_app_views_shoppings__form_html_erb__823530946107227639_70301330822340'
+app/views/shoppings/new.html.erb:7:in `_app_views_shoppings_new_html_erb__1509285522706596330_70301330478060'
+Started GET "/shoppings/new" for ::1 at 2019-12-29 15:31:27 +0000
+Processing by ShoppingsController#new as HTML
+  Rendering shoppings/new.html.erb within layouts/application
+  Rendered shoppings/_error.html.erb (0.6ms)
+  Rendered layouts/_flash.html.erb (0.4ms)
+  Rendered shoppings/_form.html.erb (1.5ms)
+  Rendered shoppings/new.html.erb within layouts/application (11.8ms)
+Completed 500 Internal Server Error in 24ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/vincethewalker/ruby/shopping_list_app_with_images/app/views/shoppings/_form.html.erb:10: syntax error, unexpected ':', expecting ')'
+... f.file_field "Select Image"  :image );@output_buffer.safe_a...
+...                              ^):
+  
+app/views/shoppings/_form.html.erb:10: syntax error, unexpected ':', expecting ')'
+app/views/shoppings/new.html.erb:7:in `_app_views_shoppings_new_html_erb__1509285522706596330_70301324582820'
+Started GET "/shoppings/new" for ::1 at 2019-12-29 15:32:04 +0000
+Processing by ShoppingsController#new as HTML
+  Rendering shoppings/new.html.erb within layouts/application
+  Rendered shoppings/_error.html.erb (0.4ms)
+  Rendered layouts/_flash.html.erb (0.7ms)
+  Rendered shoppings/_form.html.erb (1.4ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+  Rendered shoppings/new.html.erb within layouts/application (13.4ms)
+  Rendered layouts/_navBar.html.erb (0.5ms)
+Completed 200 OK in 59ms (Views: 54.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/shoppings/new" for ::1 at 2019-12-29 15:32:52 +0000
+Processing by ShoppingsController#new as HTML
+  Rendering shoppings/new.html.erb within layouts/application
+  Rendered shoppings/_error.html.erb (0.7ms)
+  Rendered layouts/_flash.html.erb (0.4ms)
+  Rendered shoppings/_form.html.erb (1.4ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+  Rendered shoppings/new.html.erb within layouts/application (16.3ms)
+  Rendered layouts/_navBar.html.erb (0.6ms)
+Completed 200 OK in 60ms (Views: 56.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/shoppings/new" for ::1 at 2019-12-29 15:42:39 +0000
+  
+SyntaxError (/Users/vincethewalker/ruby/shopping_list_app_with_images/app/controllers/shoppings_controller.rb:10: syntax error, unexpected keyword_if, expecting ')'
+    if @shop.save
+    ^~):
+  
+app/controllers/shoppings_controller.rb:10: syntax error, unexpected keyword_if, expecting ')'
+Started GET "/shoppings/new" for ::1 at 2019-12-29 15:43:41 +0000
+Processing by ShoppingsController#new as HTML
+  Rendering shoppings/new.html.erb within layouts/application
+  Rendered shoppings/_error.html.erb (0.5ms)
+  Rendered layouts/_flash.html.erb (0.5ms)
+  Rendered shoppings/_form.html.erb (1.8ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+  Rendered shoppings/new.html.erb within layouts/application (15.8ms)
+  Rendered layouts/_navBar.html.erb (0.5ms)
+Completed 200 OK in 72ms (Views: 63.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/shoppings" for ::1 at 2019-12-29 15:43:49 +0000
+Processing by ShoppingsController#index as HTML
+  Rendering shoppings/index.html.erb within layouts/application
+  Rendered layouts/_flash.html.erb (0.6ms)
+  [1m[36mShopping Load (11.4ms)[0m  [1m[34mSELECT "shoppings".* FROM "shoppings"[0m
+  Rendered layouts/_footer.html.erb (0.3ms)
+  Rendered shoppings/index.html.erb within layouts/application (31.8ms)
+  Rendered layouts/_navBar.html.erb (0.5ms)
+Completed 200 OK in 123ms (Views: 70.0ms | ActiveRecord: 11.4ms)
+
+
+Started GET "/shoppings/new" for ::1 at 2019-12-29 15:45:40 +0000
+Processing by ShoppingsController#new as HTML
+  Rendering shoppings/new.html.erb within layouts/application
+  Rendered shoppings/_error.html.erb (0.7ms)
+  Rendered layouts/_flash.html.erb (0.4ms)
+  Rendered shoppings/_form.html.erb (2.0ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+  Rendered shoppings/new.html.erb within layouts/application (16.8ms)
+  Rendered layouts/_navBar.html.erb (0.7ms)
+Completed 200 OK in 61ms (Views: 57.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/shoppings" for ::1 at 2019-12-29 15:45:56 +0000
+Processing by ShoppingsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zylYTj62wbbCQP7vb9fFQ2CMl4O4LY37nHbsOhnoAVSGae+kGE0bxp/7Mzc4kvqudBT+Tx5/p4yzQdL0fuO2hg==", "shopping"=>{"item"=>"Butter", "image"=>#<ActionDispatch::Http::UploadedFile:0x00007fe09bb22bf8 @tempfile=#<Tempfile:/var/folders/4t/9ncs7f753cb69kpnsfpc60v40000gn/T/RackMultipart20191229-21135-1wgz11f.png>, @original_filename="butter.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"shopping[image]\"; filename=\"butter.png\"\r\nContent-Type: image/png\r\n">}, "commit"=>"Add to shopping list"}
+Completed 500 Internal Server Error in 108ms (ActiveRecord: 0.9ms)
+
+
+  
+NoMethodError (undefined method `upload' for nil:NilClass):
+  
+app/controllers/shoppings_controller.rb:8:in `create'
+Started GET "/shoppings/new" for ::1 at 2019-12-29 15:47:07 +0000
+Processing by ShoppingsController#new as HTML
+  Rendering shoppings/new.html.erb within layouts/application
+  Rendered shoppings/_error.html.erb (0.4ms)
+  Rendered layouts/_flash.html.erb (0.4ms)
+  Rendered shoppings/_form.html.erb (1.8ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+  Rendered shoppings/new.html.erb within layouts/application (12.4ms)
+  Rendered layouts/_navBar.html.erb (0.6ms)
+Completed 200 OK in 70ms (Views: 59.9ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/shoppings" for ::1 at 2019-12-29 15:47:11 +0000
+Processing by ShoppingsController#index as HTML
+  Rendering shoppings/index.html.erb within layouts/application
+  Rendered layouts/_flash.html.erb (0.5ms)
+  [1m[36mShopping Load (0.3ms)[0m  [1m[34mSELECT "shoppings".* FROM "shoppings"[0m
+  Rendered layouts/_footer.html.erb (0.3ms)
+  Rendered shoppings/index.html.erb within layouts/application (7.4ms)
+  Rendered layouts/_navBar.html.erb (0.5ms)
+Completed 200 OK in 46ms (Views: 42.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/shoppings/new" for ::1 at 2019-12-29 15:47:13 +0000
+Processing by ShoppingsController#new as HTML
+  Rendering shoppings/new.html.erb within layouts/application
+  Rendered shoppings/_error.html.erb (0.8ms)
+  Rendered layouts/_flash.html.erb (0.6ms)
+  Rendered shoppings/_form.html.erb (3.2ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+  Rendered shoppings/new.html.erb within layouts/application (19.4ms)
+  Rendered layouts/_navBar.html.erb (0.7ms)
+Completed 200 OK in 69ms (Views: 65.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/shoppings" for ::1 at 2019-12-29 15:47:24 +0000
+Processing by ShoppingsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CSzlpjromHwKFC9vir/9adG8Tl4a/hmUTGihXOe96ddAbFJMHBNCDFev4rfd+sKExSQnkrysM+NjX5+SgLZeBQ==", "shopping"=>{"item"=>"Butter", "image"=>#<ActionDispatch::Http::UploadedFile:0x00007fe09867b878 @tempfile=#<Tempfile:/var/folders/4t/9ncs7f753cb69kpnsfpc60v40000gn/T/RackMultipart20191229-21135-gtw02m.png>, @original_filename="butter.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"shopping[image]\"; filename=\"butter.png\"\r\nContent-Type: image/png\r\n">}, "commit"=>"Add to shopping list"}
+Completed 500 Internal Server Error in 28ms (ActiveRecord: 1.4ms)
+
+
+  
+NoMethodError (undefined method `upload' for nil:NilClass):
+  
+app/controllers/shoppings_controller.rb:8:in `create'
+Started GET "/shoppings/new" for ::1 at 2019-12-29 15:51:51 +0000
+Processing by ShoppingsController#new as HTML
+  Rendering shoppings/new.html.erb within layouts/application
+  Rendered shoppings/_error.html.erb (0.8ms)
+  Rendered layouts/_flash.html.erb (0.6ms)
+  Rendered shoppings/_form.html.erb (1.5ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+  Rendered shoppings/new.html.erb within layouts/application (13.6ms)
+  Rendered layouts/_navBar.html.erb (0.6ms)
+Completed 200 OK in 61ms (Views: 56.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/shoppings" for ::1 at 2019-12-29 15:51:54 +0000
+Processing by ShoppingsController#index as HTML
+  Rendering shoppings/index.html.erb within layouts/application
+  Rendered layouts/_flash.html.erb (0.4ms)
+  [1m[36mShopping Load (0.2ms)[0m  [1m[34mSELECT "shoppings".* FROM "shoppings"[0m
+  Rendered layouts/_footer.html.erb (0.5ms)
+  Rendered shoppings/index.html.erb within layouts/application (8.0ms)
+  Rendered layouts/_navBar.html.erb (0.5ms)
+Completed 200 OK in 72ms (Views: 65.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/shoppings/new" for ::1 at 2019-12-29 15:51:55 +0000
+Processing by ShoppingsController#new as HTML
+  Rendering shoppings/new.html.erb within layouts/application
+  Rendered shoppings/_error.html.erb (0.6ms)
+  Rendered layouts/_flash.html.erb (0.5ms)
+  Rendered shoppings/_form.html.erb (1.4ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+  Rendered shoppings/new.html.erb within layouts/application (14.8ms)
+  Rendered layouts/_navBar.html.erb (0.6ms)
+Completed 200 OK in 63ms (Views: 56.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/shoppings" for ::1 at 2019-12-29 15:52:05 +0000
+Processing by ShoppingsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"VsFf/KgHEEhFp2fdpaw3DMgjwk/teSfjYdF1j8X8KIcfgegWjvzKOBgcqgXy6Qjh3Lurg0srDZRO5ktBovefVQ==", "shopping"=>{"item"=>"Butter", "image"=>#<ActionDispatch::Http::UploadedFile:0x00007fe09be910f0 @tempfile=#<Tempfile:/var/folders/4t/9ncs7f753cb69kpnsfpc60v40000gn/T/RackMultipart20191229-21135-13t2hb7.png>, @original_filename="butter.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"shopping[image]\"; filename=\"butter.png\"\r\nContent-Type: image/png\r\n">}, "commit"=>"Add to shopping list"}
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `upload' for nil:NilClass):
+  
+app/controllers/shoppings_controller.rb:8:in `create'
+Started GET "/shoppings/new" for ::1 at 2019-12-29 15:55:05 +0000
+Processing by ShoppingsController#new as HTML
+  Rendering shoppings/new.html.erb within layouts/application
+  Rendered shoppings/_error.html.erb (0.5ms)
+  Rendered layouts/_flash.html.erb (0.5ms)
+  Rendered shoppings/_form.html.erb (1.7ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+  Rendered shoppings/new.html.erb within layouts/application (12.5ms)
+  Rendered layouts/_navBar.html.erb (0.5ms)
+Completed 200 OK in 62ms (Views: 50.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/shoppings" for ::1 at 2019-12-29 15:55:07 +0000
+Processing by ShoppingsController#index as HTML
+  Rendering shoppings/index.html.erb within layouts/application
+  Rendered layouts/_flash.html.erb (0.6ms)
+  [1m[36mShopping Load (0.4ms)[0m  [1m[34mSELECT "shoppings".* FROM "shoppings"[0m
+  Rendered layouts/_footer.html.erb (0.3ms)
+  Rendered shoppings/index.html.erb within layouts/application (8.8ms)
+  Rendered layouts/_navBar.html.erb (0.8ms)
+Completed 200 OK in 60ms (Views: 53.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/shoppings/new" for ::1 at 2019-12-29 15:55:09 +0000
+Processing by ShoppingsController#new as HTML
+  Rendering shoppings/new.html.erb within layouts/application
+  Rendered shoppings/_error.html.erb (0.8ms)
+  Rendered layouts/_flash.html.erb (0.5ms)
+  Rendered shoppings/_form.html.erb (1.6ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+  Rendered shoppings/new.html.erb within layouts/application (17.4ms)
+  Rendered layouts/_navBar.html.erb (0.6ms)
+Completed 200 OK in 80ms (Views: 73.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/shoppings" for ::1 at 2019-12-29 15:55:19 +0000
+Processing by ShoppingsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"uJ8ChoM2j5AzlymozBnWiJ4GSvvHGnU76XrrjAogiXfx37Vspc1V4G4s5HCbXOllip4jN2FIX0zGTdVCbSs+pQ==", "shopping"=>{"item"=>"Butter", "image"=>#<ActionDispatch::Http::UploadedFile:0x00007fe097d9daf8 @tempfile=#<Tempfile:/var/folders/4t/9ncs7f753cb69kpnsfpc60v40000gn/T/RackMultipart20191229-21135-km4rqc.png>, @original_filename="butter.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"shopping[image]\"; filename=\"butter.png\"\r\nContent-Type: image/png\r\n">}, "commit"=>"Add to shopping list"}
+Completed 500 Internal Server Error in 28ms (ActiveRecord: 1.0ms)
+
+
+  
+NoMethodError (undefined method `upload' for nil:NilClass):
+  
+app/controllers/shoppings_controller.rb:8:in `create'
+DEPRECATION WARNING: Leaving `ActiveRecord::ConnectionAdapters::SQLite3Adapter.represent_boolean_as_integer`
+set to false is deprecated. SQLite databases have used 't' and 'f' to serialize
+boolean values and must have old data converted to 1 and 0 (its native boolean
+serialization) before setting this flag to true. Conversion can be accomplished
+by setting up a rake task which runs
+
+  ExampleModel.where("boolean_column = 't'").update_all(boolean_column: 1)
+  ExampleModel.where("boolean_column = 'f'").update_all(boolean_column: 0)
+
+for all models and all boolean columns, after which the flag must be set to
+true by adding the following to your application.rb file:
+
+  Rails.application.config.active_record.sqlite3.represent_boolean_as_integer = true
+ (called from instance_eval at /Users/vincethewalker/.rvm/gems/ruby-2.5.0/gems/activesupport-5.2.3/lib/active_support/lazy_load_hooks.rb:71)
+Started GET "/shoppings/new" for ::1 at 2019-12-29 15:56:01 +0000
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ShoppingsController#new as HTML
+  Rendering shoppings/new.html.erb within layouts/application
+  Rendered shoppings/_error.html.erb (0.4ms)
+  Rendered layouts/_flash.html.erb (0.5ms)
+  Rendered shoppings/_form.html.erb (39.7ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+  Rendered shoppings/new.html.erb within layouts/application (52.8ms)
+  Rendered layouts/_navBar.html.erb (1.0ms)
+Completed 200 OK in 405ms (Views: 387.5ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/shoppings" for ::1 at 2019-12-29 15:56:12 +0000
+Processing by ShoppingsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zM6HZ9NP0nx25kX/tzjNQPetMOl5c47+jAcXWDhy4DCxUPH06N+jpoqvmT50v+0vJz9UISmOIXLC4Hzm0UahCw==", "shopping"=>{"item"=>"Butter", "image"=>#<ActionDispatch::Http::UploadedFile:0x00007feb56c33888 @tempfile=#<Tempfile:/var/folders/4t/9ncs7f753cb69kpnsfpc60v40000gn/T/RackMultipart20191229-21695-vemsyc.png>, @original_filename="butter.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"shopping[image]\"; filename=\"butter.png\"\r\nContent-Type: image/png\r\n">}, "commit"=>"Add to shopping list"}
+Completed 500 Internal Server Error in 106ms (ActiveRecord: 0.9ms)
+
+
+  
+NoMethodError (undefined method `upload' for nil:NilClass):
+  
+app/controllers/shoppings_controller.rb:8:in `create'
+Started GET "/shoppings/new" for ::1 at 2019-12-29 15:59:28 +0000
+Processing by ShoppingsController#new as HTML
+  Rendering shoppings/new.html.erb within layouts/application
+  Rendered shoppings/_error.html.erb (0.4ms)
+  Rendered layouts/_flash.html.erb (0.4ms)
+  Rendered shoppings/_form.html.erb (1.4ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+  Rendered shoppings/new.html.erb within layouts/application (11.5ms)
+  Rendered layouts/_navBar.html.erb (0.5ms)
+Completed 200 OK in 51ms (Views: 47.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/shoppings" for ::1 at 2019-12-29 15:59:44 +0000
+Processing by ShoppingsController#index as HTML
+  Rendering shoppings/index.html.erb within layouts/application
+  Rendered layouts/_flash.html.erb (1.4ms)
+  [1m[36mShopping Load (0.4ms)[0m  [1m[34mSELECT "shoppings".* FROM "shoppings"[0m
+  Rendered layouts/_footer.html.erb (0.3ms)
+  Rendered shoppings/index.html.erb within layouts/application (12.6ms)
+  Rendered layouts/_navBar.html.erb (0.5ms)
+Completed 200 OK in 64ms (Views: 58.2ms | ActiveRecord: 0.4ms)
+
+
+DEPRECATION WARNING: Leaving `ActiveRecord::ConnectionAdapters::SQLite3Adapter.represent_boolean_as_integer`
+set to false is deprecated. SQLite databases have used 't' and 'f' to serialize
+boolean values and must have old data converted to 1 and 0 (its native boolean
+serialization) before setting this flag to true. Conversion can be accomplished
+by setting up a rake task which runs
+
+  ExampleModel.where("boolean_column = 't'").update_all(boolean_column: 1)
+  ExampleModel.where("boolean_column = 'f'").update_all(boolean_column: 0)
+
+for all models and all boolean columns, after which the flag must be set to
+true by adding the following to your application.rb file:
+
+  Rails.application.config.active_record.sqlite3.represent_boolean_as_integer = true
+ (called from instance_eval at /Users/vincethewalker/.rvm/gems/ruby-2.5.0/gems/activesupport-5.2.3/lib/active_support/lazy_load_hooks.rb:71)
+Started GET "/shoppings/new" for ::1 at 2019-12-29 16:00:20 +0000
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ShoppingsController#new as HTML
+  Rendering shoppings/new.html.erb within layouts/application
+  Rendered shoppings/_error.html.erb (0.5ms)
+  Rendered layouts/_flash.html.erb (0.4ms)
+  Rendered shoppings/_form.html.erb (13.3ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+  Rendered shoppings/new.html.erb within layouts/application (26.3ms)
+  Rendered layouts/_navBar.html.erb (1.4ms)
+Completed 200 OK in 379ms (Views: 364.2ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/shoppings" for ::1 at 2019-12-29 16:00:30 +0000
+Processing by ShoppingsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"e7i2LCnSwX8WmmjzREp7/uTGqz2VcUol20giptKOaDgy+AHGDykbD0shpSsTD0QT8F7C8TMjYFL0fxxotYXf6g==", "shopping"=>{"item"=>"Butter", "image"=>#<ActionDispatch::Http::UploadedFile:0x00007ff423a63b40 @tempfile=#<Tempfile:/var/folders/4t/9ncs7f753cb69kpnsfpc60v40000gn/T/RackMultipart20191229-21793-vxu0ff.png>, @original_filename="butter.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"shopping[image]\"; filename=\"butter.png\"\r\nContent-Type: image/png\r\n">}, "commit"=>"Add to shopping list"}
+Completed 500 Internal Server Error in 38ms (ActiveRecord: 0.3ms)
+
+
+  
+RuntimeError (Couldn't find Active Storage configuration in /Users/vincethewalker/ruby/shopping_list_app_with_images/config/storage.yml):
+  
+app/controllers/shoppings_controller.rb:8:in `create'
+Started GET "/shoppings/new" for ::1 at 2019-12-29 16:01:40 +0000
+Processing by ShoppingsController#new as HTML
+  Rendering shoppings/new.html.erb within layouts/application
+  Rendered shoppings/_error.html.erb (0.5ms)
+  Rendered layouts/_flash.html.erb (0.7ms)
+  Rendered shoppings/_form.html.erb (1.8ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+  Rendered shoppings/new.html.erb within layouts/application (14.2ms)
+  Rendered layouts/_navBar.html.erb (0.5ms)
+Completed 200 OK in 63ms (Views: 52.8ms | ActiveRecord: 1.2ms)
+
+
+Started POST "/shoppings" for ::1 at 2019-12-29 16:01:50 +0000
+Processing by ShoppingsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Cn4GhOZDPp2zWmC3hi6bA2DLwhd+zUYsJ24N6uRAbBx34HAX3dNPR08TvHZFqbtssFmm3y4w6aBpiWZUDXQtJw==", "shopping"=>{"item"=>"Butter", "image"=>#<ActionDispatch::Http::UploadedFile:0x00007ff4251a36e8 @tempfile=#<Tempfile:/var/folders/4t/9ncs7f753cb69kpnsfpc60v40000gn/T/RackMultipart20191229-21793-1qwuz5j.png>, @original_filename="butter.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"shopping[image]\"; filename=\"butter.png\"\r\nContent-Type: image/png\r\n">}, "commit"=>"Add to shopping list"}
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.3ms)
+
+
+  
+RuntimeError (Couldn't find Active Storage configuration in /Users/vincethewalker/ruby/shopping_list_app_with_images/config/storage.yml):
+  
+app/controllers/shoppings_controller.rb:8:in `create'
+Started GET "/shoppings/new" for ::1 at 2019-12-29 16:07:38 +0000
+Processing by ShoppingsController#new as HTML
+  Rendering shoppings/new.html.erb within layouts/application
+  Rendered shoppings/_error.html.erb (0.5ms)
+  Rendered layouts/_flash.html.erb (0.4ms)
+  Rendered shoppings/_form.html.erb (1.7ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+  Rendered shoppings/new.html.erb within layouts/application (12.4ms)
+  Rendered layouts/_navBar.html.erb (0.5ms)
+Completed 200 OK in 59ms (Views: 49.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/shoppings/new" for ::1 at 2019-12-29 16:07:39 +0000
+Processing by ShoppingsController#new as HTML
+  Rendering shoppings/new.html.erb within layouts/application
+  Rendered shoppings/_error.html.erb (0.5ms)
+  Rendered layouts/_flash.html.erb (0.8ms)
+  Rendered shoppings/_form.html.erb (1.4ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+  Rendered shoppings/new.html.erb within layouts/application (14.5ms)
+  Rendered layouts/_navBar.html.erb (0.8ms)
+Completed 200 OK in 58ms (Views: 52.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/shoppings" for ::1 at 2019-12-29 16:07:49 +0000
+Processing by ShoppingsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ATqeImmCLfeOwypLpUvAFmOexgCvriBRjZHqGmhpOJ98pOixUhJcLXKK9opmzOB5swyiyP9Tj93DdoGkgV15pA==", "shopping"=>{"item"=>"Butter", "image"=>#<ActionDispatch::Http::UploadedFile:0x00007ff42611f090 @tempfile=#<Tempfile:/var/folders/4t/9ncs7f753cb69kpnsfpc60v40000gn/T/RackMultipart20191229-21793-1858hsg.png>, @original_filename="butter.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"shopping[image]\"; filename=\"butter.png\"\r\nContent-Type: image/png\r\n">}, "commit"=>"Add to shopping list"}
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.4ms)
+
+
+  
+RuntimeError (Couldn't find Active Storage configuration in /Users/vincethewalker/ruby/shopping_list_app_with_images/config/storage.yml):
+  
+app/controllers/shoppings_controller.rb:8:in `create'
+DEPRECATION WARNING: Leaving `ActiveRecord::ConnectionAdapters::SQLite3Adapter.represent_boolean_as_integer`
+set to false is deprecated. SQLite databases have used 't' and 'f' to serialize
+boolean values and must have old data converted to 1 and 0 (its native boolean
+serialization) before setting this flag to true. Conversion can be accomplished
+by setting up a rake task which runs
+
+  ExampleModel.where("boolean_column = 't'").update_all(boolean_column: 1)
+  ExampleModel.where("boolean_column = 'f'").update_all(boolean_column: 0)
+
+for all models and all boolean columns, after which the flag must be set to
+true by adding the following to your application.rb file:
+
+  Rails.application.config.active_record.sqlite3.represent_boolean_as_integer = true
+ (called from instance_eval at /Users/vincethewalker/.rvm/gems/ruby-2.5.0/gems/activesupport-5.2.3/lib/active_support/lazy_load_hooks.rb:71)
+Started GET "/shoppings/new" for ::1 at 2019-12-29 16:10:31 +0000
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ShoppingsController#new as HTML
+  Rendering shoppings/new.html.erb within layouts/application
+  Rendered shoppings/_error.html.erb (0.7ms)
+  Rendered layouts/_flash.html.erb (0.4ms)
+  Rendered shoppings/_form.html.erb (12.4ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+  Rendered shoppings/new.html.erb within layouts/application (27.0ms)
+  Rendered layouts/_navBar.html.erb (0.7ms)
+Completed 200 OK in 358ms (Views: 342.7ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/shoppings" for ::1 at 2019-12-29 16:10:41 +0000
+Processing by ShoppingsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"iPwkiSOKJ9A3onPyMdmuKTuq5QYzraAfGWRlc2ept5T1YlIaGBpWCsvrrzPyXo5G6ziBzmNQD5NXgw7Njp32rw==", "shopping"=>{"item"=>"Butter", "image"=>#<ActionDispatch::Http::UploadedFile:0x00007f9fa46a7778 @tempfile=#<Tempfile:/var/folders/4t/9ncs7f753cb69kpnsfpc60v40000gn/T/RackMultipart20191229-22081-1hm8w4v.png>, @original_filename="butter.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"shopping[image]\"; filename=\"butter.png\"\r\nContent-Type: image/png\r\n">}, "commit"=>"Add to shopping list"}
+Completed 500 Internal Server Error in 157ms (ActiveRecord: 2.0ms)
+
+
+  
+NoMethodError (undefined method `upload' for nil:NilClass):
+  
+app/controllers/shoppings_controller.rb:8:in `create'
+Started GET "/shoppings/new" for ::1 at 2019-12-29 16:11:44 +0000
+Processing by ShoppingsController#new as HTML
+  Rendering shoppings/new.html.erb within layouts/application
+  Rendered shoppings/_error.html.erb (0.7ms)
+  Rendered layouts/_flash.html.erb (0.5ms)
+  Rendered shoppings/_form.html.erb (1.9ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+  Rendered shoppings/new.html.erb within layouts/application (16.6ms)
+  Rendered layouts/_navBar.html.erb (0.5ms)
+Completed 200 OK in 63ms (Views: 53.5ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/shoppings" for ::1 at 2019-12-29 16:11:53 +0000
+Processing by ShoppingsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"9pYJl/cVsIqfvTr6V0cKO824ALH62RJGi8pzRxZ/G0SLCH8EzIXBUGP05juUwCpUHSpkeaokvcrFLRj5/0tafw==", "shopping"=>{"item"=>"Butter", "image"=>#<ActionDispatch::Http::UploadedFile:0x00007f9fa4ab91e0 @tempfile=#<Tempfile:/var/folders/4t/9ncs7f753cb69kpnsfpc60v40000gn/T/RackMultipart20191229-22081-acdino.png>, @original_filename="butter.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"shopping[image]\"; filename=\"butter.png\"\r\nContent-Type: image/png\r\n">}, "commit"=>"Add to shopping list"}
+Completed 500 Internal Server Error in 26ms (ActiveRecord: 1.6ms)
+
+
+  
+NoMethodError (undefined method `upload' for nil:NilClass):
+  
+app/controllers/shoppings_controller.rb:8:in `create'
+Started GET "/shoppings/new" for ::1 at 2019-12-29 16:33:14 +0000
+Processing by ShoppingsController#new as HTML
+  Rendering shoppings/new.html.erb within layouts/application
+  Rendered shoppings/_error.html.erb (0.4ms)
+  Rendered layouts/_flash.html.erb (0.5ms)
+  Rendered shoppings/_form.html.erb (1.8ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+  Rendered shoppings/new.html.erb within layouts/application (14.4ms)
+  Rendered layouts/_navBar.html.erb (0.7ms)
+Completed 200 OK in 62ms (Views: 52.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/shoppings/new" for ::1 at 2019-12-29 16:33:15 +0000
+Processing by ShoppingsController#new as HTML
+  Rendering shoppings/new.html.erb within layouts/application
+  Rendered shoppings/_error.html.erb (0.8ms)
+  Rendered layouts/_flash.html.erb (0.5ms)
+  Rendered shoppings/_form.html.erb (1.4ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+  Rendered shoppings/new.html.erb within layouts/application (12.8ms)
+  Rendered layouts/_navBar.html.erb (0.8ms)
+Completed 200 OK in 59ms (Views: 54.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/shoppings" for ::1 at 2019-12-29 16:33:18 +0000
+Processing by ShoppingsController#index as HTML
+  Rendering shoppings/index.html.erb within layouts/application
+  Rendered layouts/_flash.html.erb (0.5ms)
+  [1m[36mShopping Load (0.3ms)[0m  [1m[34mSELECT "shoppings".* FROM "shoppings"[0m
+  Rendered layouts/_footer.html.erb (0.8ms)
+  Rendered shoppings/index.html.erb within layouts/application (11.3ms)
+  Rendered layouts/_navBar.html.erb (0.6ms)
+Completed 200 OK in 68ms (Views: 59.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/shoppings/new" for ::1 at 2019-12-29 16:33:19 +0000
+Processing by ShoppingsController#new as HTML
+  Rendering shoppings/new.html.erb within layouts/application
+  Rendered shoppings/_error.html.erb (1.1ms)
+  Rendered layouts/_flash.html.erb (0.4ms)
+  Rendered shoppings/_form.html.erb (3.3ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+  Rendered shoppings/new.html.erb within layouts/application (18.3ms)
+  Rendered layouts/_navBar.html.erb (0.6ms)
+Completed 200 OK in 65ms (Views: 60.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/shoppings" for ::1 at 2019-12-29 16:33:29 +0000
+Processing by ShoppingsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"b+Nvzd4917BdvNNdpkwHMxaBNCziron+MCD8kXvoKMwmo9gn+MYNwAAHHoXxCTjeAhld4ET8o4kfF8JfHOOfHg==", "shopping"=>{"item"=>"Butter", "image"=>#<ActionDispatch::Http::UploadedFile:0x00007f9fa64e73a0 @tempfile=#<Tempfile:/var/folders/4t/9ncs7f753cb69kpnsfpc60v40000gn/T/RackMultipart20191229-22081-tp126o.png>, @original_filename="butter.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"shopping[image]\"; filename=\"butter.png\"\r\nContent-Type: image/png\r\n">}, "commit"=>"Add to shopping list"}
+Completed 500 Internal Server Error in 27ms (ActiveRecord: 1.0ms)
+
+
+  
+NoMethodError (undefined method `upload' for nil:NilClass):
+  
+app/controllers/shoppings_controller.rb:8:in `create'
+Started GET "/shoppings/new" for ::1 at 2019-12-29 16:40:18 +0000
+Processing by ShoppingsController#new as HTML
+  Rendering shoppings/new.html.erb within layouts/application
+  Rendered shoppings/_error.html.erb (0.5ms)
+  Rendered layouts/_flash.html.erb (0.4ms)
+  Rendered shoppings/_form.html.erb (2.8ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+  Rendered shoppings/new.html.erb within layouts/application (14.7ms)
+  Rendered layouts/_navBar.html.erb (0.6ms)
+Completed 200 OK in 61ms (Views: 52.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/shoppings/new" for ::1 at 2019-12-29 16:40:19 +0000
+Processing by ShoppingsController#new as HTML
+  Rendering shoppings/new.html.erb within layouts/application
+  Rendered shoppings/_error.html.erb (0.5ms)
+  Rendered layouts/_flash.html.erb (0.4ms)
+  Rendered shoppings/_form.html.erb (1.3ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+  Rendered shoppings/new.html.erb within layouts/application (12.8ms)
+  Rendered layouts/_navBar.html.erb (0.5ms)
+Completed 200 OK in 62ms (Views: 57.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/shoppings" for ::1 at 2019-12-29 16:40:31 +0000
+Processing by ShoppingsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4SV2NRjTExw8aCk/wkvOUUpMi2rfdL0YtkRVNjvPa0+cuwCmI0NixsAh9f4BzO4+mt7voo+JEpT4oz6I0vsqdA==", "shopping"=>{"item"=>"Butter", "image"=>#<ActionDispatch::Http::UploadedFile:0x00007f9fa4abb5a8 @tempfile=#<Tempfile:/var/folders/4t/9ncs7f753cb69kpnsfpc60v40000gn/T/RackMultipart20191229-22081-iii1xk.png>, @original_filename="butter.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"shopping[image]\"; filename=\"butter.png\"\r\nContent-Type: image/png\r\n">}, "commit"=>"Add to shopping list"}
+Completed 500 Internal Server Error in 25ms (ActiveRecord: 1.1ms)
+
+
+  
+NoMethodError (undefined method `upload' for nil:NilClass):
+  
+app/controllers/shoppings_controller.rb:8:in `create'
+Started GET "/shoppings/new" for ::1 at 2019-12-29 16:44:54 +0000
+Processing by ShoppingsController#new as HTML
+  Rendering shoppings/new.html.erb within layouts/application
+  Rendered shoppings/_error.html.erb (0.5ms)
+  Rendered layouts/_flash.html.erb (0.4ms)
+  Rendered shoppings/_form.html.erb (1.7ms)
+  Rendered layouts/_footer.html.erb (0.8ms)
+  Rendered shoppings/new.html.erb within layouts/application (13.5ms)
+  Rendered layouts/_navBar.html.erb (0.5ms)
+Completed 200 OK in 65ms (Views: 56.4ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/shoppings" for ::1 at 2019-12-29 16:45:04 +0000
+Processing by ShoppingsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"0otXUYbQb7aTdOCtHxKxsYOP15Zo+NrVQnwNHaJonpKvFSHCvUAebG89PGzclZHeUx2zXjgFdVkMm2ajS1zfqQ==", "shopping"=>{"item"=>"Butter", "image"=>#<ActionDispatch::Http::UploadedFile:0x00007f9fa7c9bcf8 @tempfile=#<Tempfile:/var/folders/4t/9ncs7f753cb69kpnsfpc60v40000gn/T/RackMultipart20191229-22081-17of3ve.png>, @original_filename="butter.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"shopping[image]\"; filename=\"butter.png\"\r\nContent-Type: image/png\r\n">}, "commit"=>"Add to shopping list"}
+Completed 500 Internal Server Error in 39ms (ActiveRecord: 1.4ms)
+
+
+  
+NoMethodError (undefined method `upload' for nil:NilClass):
+  
+app/controllers/shoppings_controller.rb:8:in `create'
+DEPRECATION WARNING: Leaving `ActiveRecord::ConnectionAdapters::SQLite3Adapter.represent_boolean_as_integer`
+set to false is deprecated. SQLite databases have used 't' and 'f' to serialize
+boolean values and must have old data converted to 1 and 0 (its native boolean
+serialization) before setting this flag to true. Conversion can be accomplished
+by setting up a rake task which runs
+
+  ExampleModel.where("boolean_column = 't'").update_all(boolean_column: 1)
+  ExampleModel.where("boolean_column = 'f'").update_all(boolean_column: 0)
+
+for all models and all boolean columns, after which the flag must be set to
+true by adding the following to your application.rb file:
+
+  Rails.application.config.active_record.sqlite3.represent_boolean_as_integer = true
+ (called from instance_eval at /Users/vincethewalker/.rvm/gems/ruby-2.5.0/gems/activesupport-5.2.3/lib/active_support/lazy_load_hooks.rb:71)
+Started GET "/shoppings/new" for ::1 at 2019-12-29 16:47:12 +0000
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ShoppingsController#new as HTML
+  Rendering shoppings/new.html.erb within layouts/application
+  Rendered shoppings/_error.html.erb (0.5ms)
+  Rendered layouts/_flash.html.erb (0.4ms)
+  Rendered shoppings/_form.html.erb (12.9ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+  Rendered shoppings/new.html.erb within layouts/application (26.8ms)
+  Rendered layouts/_navBar.html.erb (0.9ms)
+Completed 200 OK in 357ms (Views: 340.6ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/shoppings" for ::1 at 2019-12-29 16:47:21 +0000
+Processing by ShoppingsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"g9ONYHQUwQsU/YZ9tdG1JBO3hIBvnztpEQ8Iyq7aBKv+TfvzT4Sw0ei0Wrx2VpVLwyXgSD9ilOVf6GN0R+5FkA==", "shopping"=>{"item"=>"Butter", "image"=>#<ActionDispatch::Http::UploadedFile:0x00007fe0bcd42fe8 @tempfile=#<Tempfile:/var/folders/4t/9ncs7f753cb69kpnsfpc60v40000gn/T/RackMultipart20191229-22828-1xjfyl2.png>, @original_filename="butter.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"shopping[image]\"; filename=\"butter.png\"\r\nContent-Type: image/png\r\n">}, "commit"=>"Add to shopping list"}
+[36m  Disk Storage (1.7ms) [0m[32mUploaded file to key: 2vD5j26W4F3CNjGm9EmTqZYQ (checksum: XAQgNSCX+3bs9+SZddwOuA==)[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveStorage::Blob Create (22.0ms)[0m  [1m[32mINSERT INTO "active_storage_blobs" ("key", "filename", "content_type", "metadata", "byte_size", "checksum", "created_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["key", "2vD5j26W4F3CNjGm9EmTqZYQ"], ["filename", "butter.png"], ["content_type", "image/png"], ["metadata", "{\"identified\":true}"], ["byte_size", 18078], ["checksum", "XAQgNSCX+3bs9+SZddwOuA=="], ["created_at", "2019-12-29 16:47:21.643753"]]
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+[ActiveJob] Enqueued ActiveStorage::PurgeJob (Job ID: 3686e3c1-635e-4b3b-854a-19e3d6fe772d) to Async(default) with arguments: #<GlobalID:0x00007fe0bbdb1318 @uri=#<URI::GID gid://shoppingapp/ActiveStorage::Blob/1>>
+Completed 500 Internal Server Error in 274ms (ActiveRecord: 26.0ms)
+
+
+  
+NoMethodError (undefined method `pry' for #<Binding:0x00007fe0bbdb0558>
+Did you mean?  try):
+  
+app/controllers/shoppings_controller.rb:10:in `create'
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[ActiveJob] [ActiveStorage::PurgeJob] [3686e3c1-635e-4b3b-854a-19e3d6fe772d] Performing ActiveStorage::PurgeJob (Job ID: 3686e3c1-635e-4b3b-854a-19e3d6fe772d) from Async(default) with arguments: #<GlobalID:0x00007fe0bd9cdc90 @uri=#<URI::GID gid://shoppingapp/ActiveStorage::Blob/1>>
+[ActiveJob] [ActiveStorage::PurgeJob] [3686e3c1-635e-4b3b-854a-19e3d6fe772d]   [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [3686e3c1-635e-4b3b-854a-19e3d6fe772d]   [1m[36mActiveStorage::Attachment Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "active_storage_attachments" WHERE "active_storage_attachments"."blob_id" = ? LIMIT ?[0m  [["blob_id", 1], ["LIMIT", 1]]
+[ActiveJob] [ActiveStorage::PurgeJob] [3686e3c1-635e-4b3b-854a-19e3d6fe772d]   [1m[36mActiveStorage::Blob Destroy (0.5ms)[0m  [1m[31mDELETE FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ?[0m  [["id", 1]]
+[ActiveJob] [ActiveStorage::PurgeJob] [3686e3c1-635e-4b3b-854a-19e3d6fe772d]   [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [3686e3c1-635e-4b3b-854a-19e3d6fe772d]   [1m[36mActiveStorage::Attachment Load (0.7ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 1], ["record_type", "ActiveStorage::Blob"], ["name", "preview_image"], ["LIMIT", 1]]
+[ActiveJob] [ActiveStorage::PurgeJob] [3686e3c1-635e-4b3b-854a-19e3d6fe772d] [36m  Disk Storage (48.0ms) [0m[31mDeleted file from key: 2vD5j26W4F3CNjGm9EmTqZYQ[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [3686e3c1-635e-4b3b-854a-19e3d6fe772d] [36m  Disk Storage (0.2ms) [0m[31mDeleted files by key prefix: variants/2vD5j26W4F3CNjGm9EmTqZYQ/[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [3686e3c1-635e-4b3b-854a-19e3d6fe772d] Performed ActiveStorage::PurgeJob (Job ID: 3686e3c1-635e-4b3b-854a-19e3d6fe772d) from Async(default) in 336.49ms
+DEPRECATION WARNING: Leaving `ActiveRecord::ConnectionAdapters::SQLite3Adapter.represent_boolean_as_integer`
+set to false is deprecated. SQLite databases have used 't' and 'f' to serialize
+boolean values and must have old data converted to 1 and 0 (its native boolean
+serialization) before setting this flag to true. Conversion can be accomplished
+by setting up a rake task which runs
+
+  ExampleModel.where("boolean_column = 't'").update_all(boolean_column: 1)
+  ExampleModel.where("boolean_column = 'f'").update_all(boolean_column: 0)
+
+for all models and all boolean columns, after which the flag must be set to
+true by adding the following to your application.rb file:
+
+  Rails.application.config.active_record.sqlite3.represent_boolean_as_integer = true
+ (called from instance_eval at /Users/vincethewalker/.rvm/gems/ruby-2.5.0/gems/activesupport-5.2.3/lib/active_support/lazy_load_hooks.rb:71)
+Started GET "/shoppings/new" for ::1 at 2019-12-29 16:56:38 +0000
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ShoppingsController#new as HTML
+  Rendering shoppings/new.html.erb within layouts/application
+  Rendered shoppings/_error.html.erb (0.5ms)
+  Rendered layouts/_flash.html.erb (0.5ms)
+  Rendered shoppings/_form.html.erb (64.7ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+  Rendered shoppings/new.html.erb within layouts/application (88.9ms)
+  Rendered layouts/_navBar.html.erb (0.9ms)
+Completed 200 OK in 541ms (Views: 500.2ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/shoppings" for ::1 at 2019-12-29 16:56:48 +0000
+Processing by ShoppingsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3K+2BerUEc4juh7f1PLYXVJUD742Z0d9vLzSpeXCeC+hMcCW0URgFN/zwh4XdfgygsZrdmaa6PHyW7kbDPY5FA==", "shopping"=>{"item"=>"Butter", "image"=>#<ActionDispatch::Http::UploadedFile:0x00007fd6995c6e68 @tempfile=#<Tempfile:/var/folders/4t/9ncs7f753cb69kpnsfpc60v40000gn/T/RackMultipart20191229-23042-1xiu4ob.png>, @original_filename="butter.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"shopping[image]\"; filename=\"butter.png\"\r\nContent-Type: image/png\r\n">}, "commit"=>"Add to shopping list"}
+[36m  Disk Storage (1.5ms) [0m[32mUploaded file to key: jx8Utoz4Va2dndyR1rQtTr8e (checksum: XAQgNSCX+3bs9+SZddwOuA==)[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveStorage::Blob Create (0.6ms)[0m  [1m[32mINSERT INTO "active_storage_blobs" ("key", "filename", "content_type", "metadata", "byte_size", "checksum", "created_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["key", "jx8Utoz4Va2dndyR1rQtTr8e"], ["filename", "butter.png"], ["content_type", "image/png"], ["metadata", "{\"identified\":true}"], ["byte_size", 18078], ["checksum", "XAQgNSCX+3bs9+SZddwOuA=="], ["created_at", "2019-12-29 16:56:49.062945"]]
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+[ActiveJob] Enqueued ActiveStorage::PurgeJob (Job ID: b1586c86-2f19-458a-b92e-2c59c180bfbf) to Async(default) with arguments: #<GlobalID:0x00007fd69d567220 @uri=#<URI::GID gid://shoppingapp/ActiveStorage::Blob/2>>
+  [1m[36mActiveStorage::Blob Load (0.9ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[ActiveJob] [ActiveStorage::PurgeJob] [b1586c86-2f19-458a-b92e-2c59c180bfbf] Performing ActiveStorage::PurgeJob (Job ID: b1586c86-2f19-458a-b92e-2c59c180bfbf) from Async(default) with arguments: #<GlobalID:0x00007fd69890e6a8 @uri=#<URI::GID gid://shoppingapp/ActiveStorage::Blob/2>>
+[ActiveJob] [ActiveStorage::PurgeJob] [b1586c86-2f19-458a-b92e-2c59c180bfbf]   [1m[35m (0.9ms)[0m  [1m[36mbegin transaction[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [b1586c86-2f19-458a-b92e-2c59c180bfbf]   [1m[36mActiveStorage::Attachment Exists (0.8ms)[0m  [1m[34mSELECT  1 AS one FROM "active_storage_attachments" WHERE "active_storage_attachments"."blob_id" = ? LIMIT ?[0m  [["blob_id", 2], ["LIMIT", 1]]
+[ActiveJob] [ActiveStorage::PurgeJob] [b1586c86-2f19-458a-b92e-2c59c180bfbf]   [1m[36mActiveStorage::Blob Destroy (1.1ms)[0m  [1m[31mDELETE FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ?[0m  [["id", 2]]
+[ActiveJob] [ActiveStorage::PurgeJob] [b1586c86-2f19-458a-b92e-2c59c180bfbf]   [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [b1586c86-2f19-458a-b92e-2c59c180bfbf]   [1m[36mActiveStorage::Attachment Load (1.1ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 2], ["record_type", "ActiveStorage::Blob"], ["name", "preview_image"], ["LIMIT", 1]]
+[ActiveJob] [ActiveStorage::PurgeJob] [b1586c86-2f19-458a-b92e-2c59c180bfbf] [36m  Disk Storage (0.5ms) [0m[31mDeleted file from key: jx8Utoz4Va2dndyR1rQtTr8e[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [b1586c86-2f19-458a-b92e-2c59c180bfbf] [36m  Disk Storage (0.3ms) [0m[31mDeleted files by key prefix: variants/jx8Utoz4Va2dndyR1rQtTr8e/[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [b1586c86-2f19-458a-b92e-2c59c180bfbf] Performed ActiveStorage::PurgeJob (Job ID: b1586c86-2f19-458a-b92e-2c59c180bfbf) from Async(default) in 812.51ms
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mShopping Create (0.5ms)[0m  [1m[32mINSERT INTO "shoppings" ("item") VALUES (?)[0m  [["item", "Butter"]]
+  [1m[35m (2.5ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/shoppings.2
+Completed 302 Found in 74617ms (ActiveRecord: 6.9ms)
+
+
+Started GET "/shoppings.2" for ::1 at 2019-12-29 16:58:03 +0000
+Processing by ShoppingsController#index as 
+  Rendering shoppings/index.html.erb within layouts/application
+  Rendered layouts/_flash.html.erb (0.6ms)
+  [1m[36mShopping Load (0.3ms)[0m  [1m[34mSELECT "shoppings".* FROM "shoppings"[0m
+  Rendered layouts/_footer.html.erb (0.4ms)
+  Rendered shoppings/index.html.erb within layouts/application (77.6ms)
+  Rendered layouts/_navBar.html.erb (0.6ms)
+Completed 200 OK in 239ms (Views: 186.7ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/shoppings/2" for ::1 at 2019-12-29 16:59:56 +0000
+Processing by ShoppingsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"ZxTm0j+St+ccGZ7eFBLeUe5Lf8AIVMD4T3flC/jsVpsaipBBBALGPeBQQh/Xlf4+PtkbCFipb3QBkI61EdgXoA==", "id"=>"2"}
+  [1m[36mShopping Load (0.4ms)[0m  [1m[34mSELECT  "shoppings".* FROM "shoppings" WHERE "shoppings"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mShopping Destroy (3.0ms)[0m  [1m[31mDELETE FROM "shoppings" WHERE "shoppings"."id" = ?[0m  [["id", 2]]
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 2], ["record_type", "Shopping"], ["name", "image"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/shoppings
+Completed 302 Found in 14ms (ActiveRecord: 5.6ms)
+
+
+Started GET "/shoppings" for ::1 at 2019-12-29 16:59:56 +0000
+Processing by ShoppingsController#index as HTML
+  Rendering shoppings/index.html.erb within layouts/application
+  Rendered layouts/_flash.html.erb (0.5ms)
+  [1m[36mShopping Load (0.2ms)[0m  [1m[34mSELECT "shoppings".* FROM "shoppings"[0m
+  Rendered layouts/_footer.html.erb (0.3ms)
+  Rendered shoppings/index.html.erb within layouts/application (11.5ms)
+  Rendered layouts/_navBar.html.erb (0.6ms)
+Completed 200 OK in 57ms (Views: 50.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/shoppings/new" for ::1 at 2019-12-29 16:59:58 +0000
+Processing by ShoppingsController#new as HTML
+  Rendering shoppings/new.html.erb within layouts/application
+  Rendered shoppings/_error.html.erb (0.7ms)
+  Rendered layouts/_flash.html.erb (0.5ms)
+  Rendered shoppings/_form.html.erb (1.6ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+  Rendered shoppings/new.html.erb within layouts/application (17.0ms)
+  Rendered layouts/_navBar.html.erb (0.5ms)
+Completed 200 OK in 68ms (Views: 61.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/shoppings" for ::1 at 2019-12-29 17:00:09 +0000
+Processing by ShoppingsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Ywmchvft4rV2sEyfJEw2B0Xp81iDGY39qzGQUdMq/pEqSSts0RY4xSsLgUdzCQnqUXGalCVLp4qEBq6ftCFJQw==", "shopping"=>{"item"=>"Butter", "image"=>#<ActionDispatch::Http::UploadedFile:0x00007fd69d260cc0 @tempfile=#<Tempfile:/var/folders/4t/9ncs7f753cb69kpnsfpc60v40000gn/T/RackMultipart20191229-23042-1ah47gi.png>, @original_filename="butter.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"shopping[image]\"; filename=\"butter.png\"\r\nContent-Type: image/png\r\n">}, "commit"=>"Add to shopping list"}
+[36m  Disk Storage (3.5ms) [0m[32mUploaded file to key: e95aBXf9eRabYSbbVBZUpsXT (checksum: XAQgNSCX+3bs9+SZddwOuA==)[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveStorage::Blob Create (0.7ms)[0m  [1m[32mINSERT INTO "active_storage_blobs" ("key", "filename", "content_type", "metadata", "byte_size", "checksum", "created_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["key", "e95aBXf9eRabYSbbVBZUpsXT"], ["filename", "butter.png"], ["content_type", "image/png"], ["metadata", "{\"identified\":true}"], ["byte_size", 18078], ["checksum", "XAQgNSCX+3bs9+SZddwOuA=="], ["created_at", "2019-12-29 17:00:09.732485"]]
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+[ActiveJob] Enqueued ActiveStorage::PurgeJob (Job ID: 428acc9e-33e1-4cd9-b3a0-c33a21d2f939) to Async(default) with arguments: #<GlobalID:0x00007fd6989a76f0 @uri=#<URI::GID gid://shoppingapp/ActiveStorage::Blob/3>>
+  [1m[36mActiveStorage::Blob Load (1.2ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+[ActiveJob] [ActiveStorage::PurgeJob] [428acc9e-33e1-4cd9-b3a0-c33a21d2f939] Performing ActiveStorage::PurgeJob (Job ID: 428acc9e-33e1-4cd9-b3a0-c33a21d2f939) from Async(default) with arguments: #<GlobalID:0x00007fd69cce5980 @uri=#<URI::GID gid://shoppingapp/ActiveStorage::Blob/3>>
+[ActiveJob] [ActiveStorage::PurgeJob] [428acc9e-33e1-4cd9-b3a0-c33a21d2f939]   [1m[35m (1.0ms)[0m  [1m[36mbegin transaction[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [428acc9e-33e1-4cd9-b3a0-c33a21d2f939]   [1m[36mActiveStorage::Attachment Exists (1.7ms)[0m  [1m[34mSELECT  1 AS one FROM "active_storage_attachments" WHERE "active_storage_attachments"."blob_id" = ? LIMIT ?[0m  [["blob_id", 3], ["LIMIT", 1]]
+[ActiveJob] [ActiveStorage::PurgeJob] [428acc9e-33e1-4cd9-b3a0-c33a21d2f939]   [1m[36mActiveStorage::Blob Destroy (1.0ms)[0m  [1m[31mDELETE FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ?[0m  [["id", 3]]
+[ActiveJob] [ActiveStorage::PurgeJob] [428acc9e-33e1-4cd9-b3a0-c33a21d2f939]   [1m[35m (2.0ms)[0m  [1m[36mcommit transaction[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [428acc9e-33e1-4cd9-b3a0-c33a21d2f939]   [1m[36mActiveStorage::Attachment Load (5.7ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 3], ["record_type", "ActiveStorage::Blob"], ["name", "preview_image"], ["LIMIT", 1]]
+[ActiveJob] [ActiveStorage::PurgeJob] [428acc9e-33e1-4cd9-b3a0-c33a21d2f939] [36m  Disk Storage (0.3ms) [0m[31mDeleted file from key: e95aBXf9eRabYSbbVBZUpsXT[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [428acc9e-33e1-4cd9-b3a0-c33a21d2f939] [36m  Disk Storage (0.2ms) [0m[31mDeleted files by key prefix: variants/e95aBXf9eRabYSbbVBZUpsXT/[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [428acc9e-33e1-4cd9-b3a0-c33a21d2f939] Performed ActiveStorage::PurgeJob (Job ID: 428acc9e-33e1-4cd9-b3a0-c33a21d2f939) from Async(default) in 48.61ms
+DEPRECATION WARNING: Leaving `ActiveRecord::ConnectionAdapters::SQLite3Adapter.represent_boolean_as_integer`
+set to false is deprecated. SQLite databases have used 't' and 'f' to serialize
+boolean values and must have old data converted to 1 and 0 (its native boolean
+serialization) before setting this flag to true. Conversion can be accomplished
+by setting up a rake task which runs
+
+  ExampleModel.where("boolean_column = 't'").update_all(boolean_column: 1)
+  ExampleModel.where("boolean_column = 'f'").update_all(boolean_column: 0)
+
+for all models and all boolean columns, after which the flag must be set to
+true by adding the following to your application.rb file:
+
+  Rails.application.config.active_record.sqlite3.represent_boolean_as_integer = true
+ (called from instance_eval at /Users/vincethewalker/.rvm/gems/ruby-2.5.0/gems/activesupport-5.2.3/lib/active_support/lazy_load_hooks.rb:71)
+Started GET "/shoppings" for ::1 at 2019-12-29 17:04:29 +0000
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ShoppingsController#index as HTML
+  Rendering shoppings/index.html.erb within layouts/application
+  Rendered layouts/_flash.html.erb (0.8ms)
+  [1m[36mShopping Load (0.2ms)[0m  [1m[34mSELECT "shoppings".* FROM "shoppings"[0m
+  Rendered layouts/_footer.html.erb (0.8ms)
+  Rendered shoppings/index.html.erb within layouts/application (33.8ms)
+  Rendered layouts/_navBar.html.erb (0.9ms)
+Completed 200 OK in 430ms (Views: 390.3ms | ActiveRecord: 0.8ms)
+
+
+DEPRECATION WARNING: Leaving `ActiveRecord::ConnectionAdapters::SQLite3Adapter.represent_boolean_as_integer`
+set to false is deprecated. SQLite databases have used 't' and 'f' to serialize
+boolean values and must have old data converted to 1 and 0 (its native boolean
+serialization) before setting this flag to true. Conversion can be accomplished
+by setting up a rake task which runs
+
+  ExampleModel.where("boolean_column = 't'").update_all(boolean_column: 1)
+  ExampleModel.where("boolean_column = 'f'").update_all(boolean_column: 0)
+
+for all models and all boolean columns, after which the flag must be set to
+true by adding the following to your application.rb file:
+
+  Rails.application.config.active_record.sqlite3.represent_boolean_as_integer = true
+ (called from instance_eval at /Users/vincethewalker/.rvm/gems/ruby-2.5.0/gems/activesupport-5.2.3/lib/active_support/lazy_load_hooks.rb:71)
+Started GET "/shoppings" for ::1 at 2019-12-29 17:06:28 +0000
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ShoppingsController#index as HTML
+  Rendering shoppings/index.html.erb within layouts/application
+  Rendered layouts/_flash.html.erb (0.6ms)
+  [1m[36mShopping Load (0.2ms)[0m  [1m[34mSELECT "shoppings".* FROM "shoppings"[0m
+  Rendered layouts/_footer.html.erb (0.3ms)
+  Rendered shoppings/index.html.erb within layouts/application (13.9ms)
+  Rendered layouts/_navBar.html.erb (0.8ms)
+Completed 200 OK in 381ms (Views: 368.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/shoppings/new" for ::1 at 2019-12-29 17:06:30 +0000
+Processing by ShoppingsController#new as HTML
+  Rendering shoppings/new.html.erb within layouts/application
+  Rendered shoppings/_error.html.erb (0.5ms)
+  Rendered layouts/_flash.html.erb (0.7ms)
+  Rendered shoppings/_form.html.erb (17126.9ms)
+  Rendered layouts/_footer.html.erb (1.4ms)
+  Rendered shoppings/new.html.erb within layouts/application (17143.5ms)
+  Rendered layouts/_navBar.html.erb (0.9ms)
+Completed 200 OK in 17201ms (Views: 17193.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/shoppings" for ::1 at 2019-12-29 17:07:18 +0000
+Processing by ShoppingsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Fi/ej69KIxo7r0pJARyRQyP21/udMfOF/5E4/ya6FYZfb2llibH5amYUh5FWWa6uN26+Nztj2fLQpgYxQbGiVA==", "shopping"=>{"item"=>"Butter", "image"=>#<ActionDispatch::Http::UploadedFile:0x00007ff0e4c75920 @tempfile=#<Tempfile:/var/folders/4t/9ncs7f753cb69kpnsfpc60v40000gn/T/RackMultipart20191229-23281-dmdc3k.png>, @original_filename="butter.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"shopping[image]\"; filename=\"butter.png\"\r\nContent-Type: image/png\r\n">}, "commit"=>"Add to shopping list"}
+[36m  Disk Storage (2.3ms) [0m[32mUploaded file to key: h8qgcCqF6VhMGBZJUxBAQwMn (checksum: XAQgNSCX+3bs9+SZddwOuA==)[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveStorage::Blob Create (0.6ms)[0m  [1m[32mINSERT INTO "active_storage_blobs" ("key", "filename", "content_type", "metadata", "byte_size", "checksum", "created_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["key", "h8qgcCqF6VhMGBZJUxBAQwMn"], ["filename", "butter.png"], ["content_type", "image/png"], ["metadata", "{\"identified\":true}"], ["byte_size", 18078], ["checksum", "XAQgNSCX+3bs9+SZddwOuA=="], ["created_at", "2019-12-29 17:07:18.366398"]]
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+[ActiveJob] Enqueued ActiveStorage::PurgeJob (Job ID: fa8d45fc-dc1c-4cd0-9132-6e6e048ff934) to Async(default) with arguments: #<GlobalID:0x00007ff0e4cbc988 @uri=#<URI::GID gid://shoppingapp/ActiveStorage::Blob/4>>
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mShopping Create (0.5ms)[0m  [1m[32mINSERT INTO "shoppings" ("item") VALUES (?)[0m  [["item", "Butter"]]
+  [1m[35m (7.2ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/shoppings.3
+Completed 302 Found in 237ms (ActiveRecord: 11.3ms)
+
+
+Started GET "/shoppings.3" for ::1 at 2019-12-29 17:07:18 +0000
+Processing by ShoppingsController#index as 
+  Rendering shoppings/index.html.erb within layouts/application
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+[ActiveJob] [ActiveStorage::PurgeJob] [fa8d45fc-dc1c-4cd0-9132-6e6e048ff934] Performing ActiveStorage::PurgeJob (Job ID: fa8d45fc-dc1c-4cd0-9132-6e6e048ff934) from Async(default) with arguments: #<GlobalID:0x00007ff0e4d87548 @uri=#<URI::GID gid://shoppingapp/ActiveStorage::Blob/4>>
+  Rendered layouts/_flash.html.erb (0.6ms)
+  [1m[36mShopping Load (0.1ms)[0m  [1m[34mSELECT "shoppings".* FROM "shoppings"[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [fa8d45fc-dc1c-4cd0-9132-6e6e048ff934]   [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  Rendered layouts/_footer.html.erb (0.3ms)
+  Rendered shoppings/index.html.erb within layouts/application (85.8ms)
+[ActiveJob] [ActiveStorage::PurgeJob] [fa8d45fc-dc1c-4cd0-9132-6e6e048ff934]   [1m[36mActiveStorage::Attachment Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "active_storage_attachments" WHERE "active_storage_attachments"."blob_id" = ? LIMIT ?[0m  [["blob_id", 4], ["LIMIT", 1]]
+[ActiveJob] [ActiveStorage::PurgeJob] [fa8d45fc-dc1c-4cd0-9132-6e6e048ff934]   [1m[36mActiveStorage::Blob Destroy (0.6ms)[0m  [1m[31mDELETE FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ?[0m  [["id", 4]]
+[ActiveJob] [ActiveStorage::PurgeJob] [fa8d45fc-dc1c-4cd0-9132-6e6e048ff934]   [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [fa8d45fc-dc1c-4cd0-9132-6e6e048ff934]   [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 4], ["record_type", "ActiveStorage::Blob"], ["name", "preview_image"], ["LIMIT", 1]]
+[ActiveJob] [ActiveStorage::PurgeJob] [fa8d45fc-dc1c-4cd0-9132-6e6e048ff934] [36m  Disk Storage (0.2ms) [0m[31mDeleted file from key: h8qgcCqF6VhMGBZJUxBAQwMn[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [fa8d45fc-dc1c-4cd0-9132-6e6e048ff934] [36m  Disk Storage (0.1ms) [0m[31mDeleted files by key prefix: variants/h8qgcCqF6VhMGBZJUxBAQwMn/[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [fa8d45fc-dc1c-4cd0-9132-6e6e048ff934] Performed ActiveStorage::PurgeJob (Job ID: fa8d45fc-dc1c-4cd0-9132-6e6e048ff934) from Async(default) in 75.3ms
+  Rendered layouts/_navBar.html.erb (0.6ms)
+Completed 200 OK in 257ms (Views: 218.6ms | ActiveRecord: 0.1ms)
+
+
+DEPRECATION WARNING: Leaving `ActiveRecord::ConnectionAdapters::SQLite3Adapter.represent_boolean_as_integer`
+set to false is deprecated. SQLite databases have used 't' and 'f' to serialize
+boolean values and must have old data converted to 1 and 0 (its native boolean
+serialization) before setting this flag to true. Conversion can be accomplished
+by setting up a rake task which runs
+
+  ExampleModel.where("boolean_column = 't'").update_all(boolean_column: 1)
+  ExampleModel.where("boolean_column = 'f'").update_all(boolean_column: 0)
+
+for all models and all boolean columns, after which the flag must be set to
+true by adding the following to your application.rb file:
+
+  Rails.application.config.active_record.sqlite3.represent_boolean_as_integer = true
+ (called from require at /Users/vincethewalker/.rvm/rubies/ruby-2.5.0/lib/ruby/site_ruby/2.5.0/rubygems/core_ext/kernel_require.rb:54)
+  [1m[36mShopping Load (12.4ms)[0m  [1m[34mSELECT  "shoppings".* FROM "shoppings" LIMIT ?[0m  [["LIMIT", 11]]
+DEPRECATION WARNING: Leaving `ActiveRecord::ConnectionAdapters::SQLite3Adapter.represent_boolean_as_integer`
+set to false is deprecated. SQLite databases have used 't' and 'f' to serialize
+boolean values and must have old data converted to 1 and 0 (its native boolean
+serialization) before setting this flag to true. Conversion can be accomplished
+by setting up a rake task which runs
+
+  ExampleModel.where("boolean_column = 't'").update_all(boolean_column: 1)
+  ExampleModel.where("boolean_column = 'f'").update_all(boolean_column: 0)
+
+for all models and all boolean columns, after which the flag must be set to
+true by adding the following to your application.rb file:
+
+  Rails.application.config.active_record.sqlite3.represent_boolean_as_integer = true
+ (called from instance_eval at /Users/vincethewalker/.rvm/gems/ruby-2.5.0/gems/activesupport-5.2.3/lib/active_support/lazy_load_hooks.rb:71)
+Started DELETE "/shoppings/3" for ::1 at 2019-12-29 17:18:21 +0000
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ShoppingsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"LKl5bm8CVsI3OdSpsPNEltwvBHE4OhfwCpddzZZC3GtRNw/9VJInGMtwCGhzdGT5DL1guWjHuHxEcDZzf3adUA==", "id"=>"3"}
+  [1m[36mShopping Load (0.2ms)[0m  [1m[34mSELECT  "shoppings".* FROM "shoppings" WHERE "shoppings"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mShopping Destroy (0.4ms)[0m  [1m[31mDELETE FROM "shoppings" WHERE "shoppings"."id" = ?[0m  [["id", 3]]
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 3], ["record_type", "Shopping"], ["name", "image"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/shoppings
+Completed 302 Found in 85ms (ActiveRecord: 3.3ms)
+
+
+Started GET "/shoppings" for ::1 at 2019-12-29 17:18:22 +0000
+Processing by ShoppingsController#index as HTML
+  Rendering shoppings/index.html.erb within layouts/application
+  Rendered layouts/_flash.html.erb (0.5ms)
+  [1m[36mShopping Load (0.2ms)[0m  [1m[34mSELECT "shoppings".* FROM "shoppings"[0m
+  Rendered layouts/_footer.html.erb (0.3ms)
+  Rendered shoppings/index.html.erb within layouts/application (35.6ms)
+  Rendered layouts/_navBar.html.erb (0.9ms)
+Completed 200 OK in 408ms (Views: 396.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/shoppings/new" for ::1 at 2019-12-29 17:18:33 +0000
+Processing by ShoppingsController#new as HTML
+  Rendering shoppings/new.html.erb within layouts/application
+  Rendered shoppings/_error.html.erb (0.5ms)
+  Rendered layouts/_flash.html.erb (0.4ms)
+  Rendered shoppings/_form.html.erb (57.7ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+  Rendered shoppings/new.html.erb within layouts/application (71.6ms)
+  Rendered layouts/_navBar.html.erb (0.5ms)
+Completed 200 OK in 123ms (Views: 106.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/shoppings" for ::1 at 2019-12-29 17:18:49 +0000
+Processing by ShoppingsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"f/XePSrsE+DKXWmnozP0GOfLlqoqnZ4KD0Rf4VIWt982tWnXDBfJkJfmpH/0dsv181P/ZozPtH0gc2EvNR0ADQ==", "shopping"=>{"item"=>"Butter", "image"=>#<ActionDispatch::Http::UploadedFile:0x00007f935a9f04a8 @tempfile=#<Tempfile:/var/folders/4t/9ncs7f753cb69kpnsfpc60v40000gn/T/RackMultipart20191229-23514-4otsxx.png>, @original_filename="butter.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"shopping[image]\"; filename=\"butter.png\"\r\nContent-Type: image/png\r\n">}, "commit"=>"Add to shopping list"}
+[36m  Disk Storage (1.9ms) [0m[32mUploaded file to key: ZGUXPmmCCzJmiU6UxQwzRKpC (checksum: XAQgNSCX+3bs9+SZddwOuA==)[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveStorage::Blob Create (0.5ms)[0m  [1m[32mINSERT INTO "active_storage_blobs" ("key", "filename", "content_type", "metadata", "byte_size", "checksum", "created_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["key", "ZGUXPmmCCzJmiU6UxQwzRKpC"], ["filename", "butter.png"], ["content_type", "image/png"], ["metadata", "{\"identified\":true}"], ["byte_size", 18078], ["checksum", "XAQgNSCX+3bs9+SZddwOuA=="], ["created_at", "2019-12-29 17:18:49.713133"]]
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+[ActiveJob] Enqueued ActiveStorage::PurgeJob (Job ID: e1eb11f9-7241-415e-827c-d4ef107662c9) to Async(default) with arguments: #<GlobalID:0x00007f9356b329f0 @uri=#<URI::GID gid://shoppingapp/ActiveStorage::Blob/5>>
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mShopping Create (0.5ms)[0m  [1m[32mINSERT INTO "shoppings" ("item") VALUES (?)[0m  [["item", "Butter"]]
+  [1m[35m (3.8ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/shoppings.4
+Completed 302 Found in 205ms (ActiveRecord: 7.5ms)
+
+
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+[ActiveJob] [ActiveStorage::PurgeJob] [e1eb11f9-7241-415e-827c-d4ef107662c9] Performing ActiveStorage::PurgeJob (Job ID: e1eb11f9-7241-415e-827c-d4ef107662c9) from Async(default) with arguments: #<GlobalID:0x00007f9358e81898 @uri=#<URI::GID gid://shoppingapp/ActiveStorage::Blob/5>>
+[ActiveJob] [ActiveStorage::PurgeJob] [e1eb11f9-7241-415e-827c-d4ef107662c9]   [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/shoppings.4" for ::1 at 2019-12-29 17:18:49 +0000
+Processing by ShoppingsController#index as 
+  Rendering shoppings/index.html.erb within layouts/application
+  Rendered layouts/_flash.html.erb (0.5ms)
+  [1m[36mShopping Load (0.2ms)[0m  [1m[34mSELECT "shoppings".* FROM "shoppings"[0m
+  Rendered layouts/_footer.html.erb (0.8ms)
+  Rendered shoppings/index.html.erb within layouts/application (80.0ms)
+[ActiveJob] [ActiveStorage::PurgeJob] [e1eb11f9-7241-415e-827c-d4ef107662c9]   [1m[36mActiveStorage::Attachment Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "active_storage_attachments" WHERE "active_storage_attachments"."blob_id" = ? LIMIT ?[0m  [["blob_id", 5], ["LIMIT", 1]]
+[ActiveJob] [ActiveStorage::PurgeJob] [e1eb11f9-7241-415e-827c-d4ef107662c9]   [1m[36mActiveStorage::Blob Destroy (0.4ms)[0m  [1m[31mDELETE FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ?[0m  [["id", 5]]
+[ActiveJob] [ActiveStorage::PurgeJob] [e1eb11f9-7241-415e-827c-d4ef107662c9]   [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [e1eb11f9-7241-415e-827c-d4ef107662c9]   [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 5], ["record_type", "ActiveStorage::Blob"], ["name", "preview_image"], ["LIMIT", 1]]
+[ActiveJob] [ActiveStorage::PurgeJob] [e1eb11f9-7241-415e-827c-d4ef107662c9] [36m  Disk Storage (0.2ms) [0m[31mDeleted file from key: ZGUXPmmCCzJmiU6UxQwzRKpC[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [e1eb11f9-7241-415e-827c-d4ef107662c9] [36m  Disk Storage (0.1ms) [0m[31mDeleted files by key prefix: variants/ZGUXPmmCCzJmiU6UxQwzRKpC/[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [e1eb11f9-7241-415e-827c-d4ef107662c9] Performed ActiveStorage::PurgeJob (Job ID: e1eb11f9-7241-415e-827c-d4ef107662c9) from Async(default) in 218.96ms
+  Rendered layouts/_navBar.html.erb (0.7ms)
+Completed 200 OK in 283ms (Views: 236.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/shoppings/4/edit" for ::1 at 2019-12-29 17:19:11 +0000
+Processing by ShoppingsController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mShopping Load (0.8ms)[0m  [1m[34mSELECT  "shoppings".* FROM "shoppings" WHERE "shoppings"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering shoppings/edit.html.erb within layouts/application
+  Rendered shoppings/_error.html.erb (0.5ms)
+  Rendered shoppings/_form.html.erb (1.8ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+  Rendered shoppings/edit.html.erb within layouts/application (85.8ms)
+  Rendered layouts/_navBar.html.erb (0.6ms)
+Completed 200 OK in 258ms (Views: 184.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/shoppings" for ::1 at 2019-12-29 17:19:20 +0000
+Processing by ShoppingsController#index as HTML
+  Rendering shoppings/index.html.erb within layouts/application
+  Rendered layouts/_flash.html.erb (1.1ms)
+  [1m[36mShopping Load (0.4ms)[0m  [1m[34mSELECT "shoppings".* FROM "shoppings"[0m
+  Rendered layouts/_footer.html.erb (0.3ms)
+  Rendered shoppings/index.html.erb within layouts/application (16.3ms)
+  Rendered layouts/_navBar.html.erb (0.5ms)
+Completed 200 OK in 91ms (Views: 85.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/shoppings/1/edit" for ::1 at 2019-12-29 17:19:30 +0000
+Processing by ShoppingsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mShopping Load (0.4ms)[0m  [1m[34mSELECT  "shoppings".* FROM "shoppings" WHERE "shoppings"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering shoppings/edit.html.erb within layouts/application
+  Rendered shoppings/_error.html.erb (1.1ms)
+  Rendered shoppings/_form.html.erb (3.2ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+  Rendered shoppings/edit.html.erb within layouts/application (20.4ms)
+  Rendered layouts/_navBar.html.erb (0.5ms)
+Completed 200 OK in 87ms (Views: 79.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/shoppings" for ::1 at 2019-12-29 17:19:34 +0000
+Processing by ShoppingsController#index as HTML
+  Rendering shoppings/index.html.erb within layouts/application
+  Rendered layouts/_flash.html.erb (1.7ms)
+  [1m[36mShopping Load (0.4ms)[0m  [1m[34mSELECT "shoppings".* FROM "shoppings"[0m
+  Rendered layouts/_footer.html.erb (1.5ms)
+  Rendered shoppings/index.html.erb within layouts/application (17.0ms)
+  Rendered layouts/_navBar.html.erb (0.5ms)
+Completed 200 OK in 87ms (Views: 77.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/shoppings/4/edit" for ::1 at 2019-12-29 17:19:35 +0000
+Processing by ShoppingsController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mShopping Load (0.3ms)[0m  [1m[34mSELECT  "shoppings".* FROM "shoppings" WHERE "shoppings"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering shoppings/edit.html.erb within layouts/application
+  Rendered shoppings/_error.html.erb (1.3ms)
+  Rendered shoppings/_form.html.erb (1.6ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+  Rendered shoppings/edit.html.erb within layouts/application (15.7ms)
+  Rendered layouts/_navBar.html.erb (0.5ms)
+Completed 200 OK in 99ms (Views: 90.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/shoppings/4/show" for ::1 at 2019-12-29 17:19:43 +0000
+  
+ActionController::RoutingError (No route matches [GET] "/shoppings/4/show"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.8) lib/rack/method_override.rb:22:in `call'
+rack (2.0.8) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.8) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.2) lib/puma/configuration.rb:227:in `call'
+puma (3.12.2) lib/puma/server.rb:674:in `handle_request'
+puma (3.12.2) lib/puma/server.rb:476:in `process_client'
+puma (3.12.2) lib/puma/server.rb:334:in `block in run'
+puma (3.12.2) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/shoppings/4" for ::1 at 2019-12-29 17:20:03 +0000
+Processing by ShoppingsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mShopping Load (0.2ms)[0m  [1m[34mSELECT  "shoppings".* FROM "shoppings" WHERE "shoppings"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering shoppings/show.html.erb within layouts/application
+  Rendered layouts/_flash.html.erb (0.4ms)
+  Rendered shoppings/show.html.erb within layouts/application (312.7ms)
+Completed 500 Internal Server Error in 338ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `shopping' for #<#<Class:0x00007f9358f30438>:0x00007f9356385568>
+Did you mean?  shopping_url):
+     6: <div class="well">
+     7: <p class="itemsFont">
+     8:   <span class="boldText">Item:</span> <%= @shop.item %>
+     9:  <%= image_tag shopping.image if shopping.image.attached? %>
+    10: </p>
+    11: 
+    12: <%= link_to "Edit this item", edit_shopping_path(@shop), class: "btn btn-warning" %> |
+  
+app/views/shoppings/show.html.erb:9:in `_app_views_shoppings_show_html_erb__3154293757148365641_70135391727440'
+Started GET "/shoppings/4" for ::1 at 2019-12-29 17:21:20 +0000
+Processing by ShoppingsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mShopping Load (0.5ms)[0m  [1m[34mSELECT  "shoppings".* FROM "shoppings" WHERE "shoppings"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering shoppings/show.html.erb within layouts/application
+  Rendered layouts/_flash.html.erb (0.4ms)
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 4], ["record_type", "Shopping"], ["name", "image"], ["LIMIT", 1]]
+  Rendered layouts/_footer.html.erb (0.3ms)
+  Rendered shoppings/show.html.erb within layouts/application (9.7ms)
+  Rendered layouts/_navBar.html.erb (0.6ms)
+Completed 200 OK in 59ms (Views: 53.1ms | ActiveRecord: 0.6ms)
+
+
+DEPRECATION WARNING: Leaving `ActiveRecord::ConnectionAdapters::SQLite3Adapter.represent_boolean_as_integer`
+set to false is deprecated. SQLite databases have used 't' and 'f' to serialize
+boolean values and must have old data converted to 1 and 0 (its native boolean
+serialization) before setting this flag to true. Conversion can be accomplished
+by setting up a rake task which runs
+
+  ExampleModel.where("boolean_column = 't'").update_all(boolean_column: 1)
+  ExampleModel.where("boolean_column = 'f'").update_all(boolean_column: 0)
+
+for all models and all boolean columns, after which the flag must be set to
+true by adding the following to your application.rb file:
+
+  Rails.application.config.active_record.sqlite3.represent_boolean_as_integer = true
+ (called from require at /Users/vincethewalker/ruby/shopping_list_app_with_images/bin/rails:9)
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (12.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (1.5ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (1.5ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateShopping (20180502124550)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.6ms)[0m  [1m[35mCREATE TABLE "shoppings" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "item" varchar)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20180502124550"]]
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateActiveStorageTables (20191229151010)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE TABLE "active_storage_blobs" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "key" varchar NOT NULL, "filename" varchar NOT NULL, "content_type" varchar, "metadata" text, "byte_size" bigint NOT NULL, "checksum" varchar NOT NULL, "created_at" datetime NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_active_storage_blobs_on_key" ON "active_storage_blobs" ("key")[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE TABLE "active_storage_attachments" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar NOT NULL, "record_type" varchar NOT NULL, "record_id" integer NOT NULL, "blob_id" integer NOT NULL, "created_at" datetime NOT NULL, CONSTRAINT "fk_rails_c3b3935057"
+FOREIGN KEY ("blob_id")
+  REFERENCES "active_storage_blobs" ("id")
+)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE  INDEX "index_active_storage_attachments_on_blob_id" ON "active_storage_attachments" ("blob_id")[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_active_storage_attachments_uniqueness" ON "active_storage_attachments" ("record_type", "record_id", "name", "blob_id")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20191229151010"]]
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.8ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2019-12-29 17:23:35.362775"], ["updated_at", "2019-12-29 17:23:35.362775"]]
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/shoppings" for ::1 at 2019-12-29 17:23:45 +0000
+Processing by ShoppingsController#index as HTML
+  Rendering shoppings/index.html.erb within layouts/application
+  Rendered layouts/_flash.html.erb (0.7ms)
+  [1m[36mShopping Load (0.2ms)[0m  [1m[34mSELECT "shoppings".* FROM "shoppings"[0m
+  Rendered layouts/_footer.html.erb (0.3ms)
+  Rendered shoppings/index.html.erb within layouts/application (8.7ms)
+  Rendered layouts/_navBar.html.erb (1.0ms)
+Completed 200 OK in 81ms (Views: 62.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/shoppings/new" for ::1 at 2019-12-29 17:23:48 +0000
+Processing by ShoppingsController#new as HTML
+  Rendering shoppings/new.html.erb within layouts/application
+  Rendered shoppings/_error.html.erb (0.5ms)
+  Rendered layouts/_flash.html.erb (1.0ms)
+  Rendered shoppings/_form.html.erb (2.3ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+  Rendered shoppings/new.html.erb within layouts/application (17.6ms)
+  Rendered layouts/_navBar.html.erb (0.6ms)
+Completed 200 OK in 83ms (Views: 69.3ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/shoppings" for ::1 at 2019-12-29 17:23:58 +0000
+Processing by ShoppingsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ruoDh/g7HSE4339vRD4hQuYc6B0egKL9IC+O7Anws+jnqrRt3sDHUWVksrcTex6v8oSB0bjSiIoPGLAibvsEOg==", "shopping"=>{"item"=>"Butter", "image"=>#<ActionDispatch::Http::UploadedFile:0x00007f935c2da630 @tempfile=#<Tempfile:/var/folders/4t/9ncs7f753cb69kpnsfpc60v40000gn/T/RackMultipart20191229-23514-hlekqx.png>, @original_filename="butter.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"shopping[image]\"; filename=\"butter.png\"\r\nContent-Type: image/png\r\n">}, "commit"=>"Add to shopping list"}
+[36m  Disk Storage (2.0ms) [0m[32mUploaded file to key: 7CHYrdZjYtubLTpkTBLzoQUs (checksum: XAQgNSCX+3bs9+SZddwOuA==)[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveStorage::Blob Create (0.8ms)[0m  [1m[32mINSERT INTO "active_storage_blobs" ("key", "filename", "content_type", "metadata", "byte_size", "checksum", "created_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["key", "7CHYrdZjYtubLTpkTBLzoQUs"], ["filename", "butter.png"], ["content_type", "image/png"], ["metadata", "{\"identified\":true}"], ["byte_size", 18078], ["checksum", "XAQgNSCX+3bs9+SZddwOuA=="], ["created_at", "2019-12-29 17:23:58.271287"]]
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+[ActiveJob] Enqueued ActiveStorage::PurgeJob (Job ID: eae9bc8b-11dc-4765-9a40-4d077f23c469) to Async(default) with arguments: #<GlobalID:0x00007f935c298528 @uri=#<URI::GID gid://shoppingapp/ActiveStorage::Blob/1>>
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mShopping Create (0.4ms)[0m  [1m[32mINSERT INTO "shoppings" ("item") VALUES (?)[0m  [["item", "Butter"]]
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/shoppings.1
+Completed 302 Found in 83ms (ActiveRecord: 5.8ms)
+
+
+  [1m[36mActiveStorage::Blob Load (0.1ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[ActiveJob] [ActiveStorage::PurgeJob] [eae9bc8b-11dc-4765-9a40-4d077f23c469] Performing ActiveStorage::PurgeJob (Job ID: eae9bc8b-11dc-4765-9a40-4d077f23c469) from Async(default) with arguments: #<GlobalID:0x00007f935c252960 @uri=#<URI::GID gid://shoppingapp/ActiveStorage::Blob/1>>
+[ActiveJob] [ActiveStorage::PurgeJob] [eae9bc8b-11dc-4765-9a40-4d077f23c469]   [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [eae9bc8b-11dc-4765-9a40-4d077f23c469]   [1m[36mActiveStorage::Attachment Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "active_storage_attachments" WHERE "active_storage_attachments"."blob_id" = ? LIMIT ?[0m  [["blob_id", 1], ["LIMIT", 1]]
+[ActiveJob] [ActiveStorage::PurgeJob] [eae9bc8b-11dc-4765-9a40-4d077f23c469]   [1m[36mActiveStorage::Blob Destroy (0.5ms)[0m  [1m[31mDELETE FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ?[0m  [["id", 1]]
+[ActiveJob] [ActiveStorage::PurgeJob] [eae9bc8b-11dc-4765-9a40-4d077f23c469]   [1m[35m (11.8ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/shoppings.1" for ::1 at 2019-12-29 17:23:58 +0000
+Processing by ShoppingsController#index as 
+  Rendering shoppings/index.html.erb within layouts/application
+  Rendered layouts/_flash.html.erb (0.7ms)
+  [1m[36mShopping Load (0.2ms)[0m  [1m[34mSELECT "shoppings".* FROM "shoppings"[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [eae9bc8b-11dc-4765-9a40-4d077f23c469]   [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 1], ["record_type", "ActiveStorage::Blob"], ["name", "preview_image"], ["LIMIT", 1]]
+  Rendered layouts/_footer.html.erb (0.4ms)
+  Rendered shoppings/index.html.erb within layouts/application (94.3ms)
+[ActiveJob] [ActiveStorage::PurgeJob] [eae9bc8b-11dc-4765-9a40-4d077f23c469] [36m  Disk Storage (0.6ms) [0m[31mDeleted file from key: 7CHYrdZjYtubLTpkTBLzoQUs[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [eae9bc8b-11dc-4765-9a40-4d077f23c469] [36m  Disk Storage (0.2ms) [0m[31mDeleted files by key prefix: variants/7CHYrdZjYtubLTpkTBLzoQUs/[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [eae9bc8b-11dc-4765-9a40-4d077f23c469] Performed ActiveStorage::PurgeJob (Job ID: eae9bc8b-11dc-4765-9a40-4d077f23c469) from Async(default) in 197.68ms
+  Rendered layouts/_navBar.html.erb (0.6ms)
+Completed 200 OK in 243ms (Views: 202.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/shoppings/1" for ::1 at 2019-12-29 17:24:13 +0000
+Processing by ShoppingsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mShopping Load (0.3ms)[0m  [1m[34mSELECT  "shoppings".* FROM "shoppings" WHERE "shoppings"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering shoppings/show.html.erb within layouts/application
+  Rendered layouts/_flash.html.erb (0.4ms)
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 1], ["record_type", "Shopping"], ["name", "image"], ["LIMIT", 1]]
+  Rendered layouts/_footer.html.erb (0.5ms)
+  Rendered shoppings/show.html.erb within layouts/application (8.3ms)
+  Rendered layouts/_navBar.html.erb (0.6ms)
+Completed 200 OK in 64ms (Views: 56.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/shoppings/1/edit" for ::1 at 2019-12-29 17:26:14 +0000
+Processing by ShoppingsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mShopping Load (0.3ms)[0m  [1m[34mSELECT  "shoppings".* FROM "shoppings" WHERE "shoppings"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering shoppings/edit.html.erb within layouts/application
+  Rendered shoppings/_error.html.erb (0.5ms)
+  Rendered shoppings/_form.html.erb (3.4ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+  Rendered shoppings/edit.html.erb within layouts/application (11.7ms)
+  Rendered layouts/_navBar.html.erb (0.7ms)
+Completed 200 OK in 67ms (Views: 52.5ms | ActiveRecord: 1.3ms)
+
+
+Started PATCH "/shoppings/1" for ::1 at 2019-12-29 17:26:23 +0000
+Processing by ShoppingsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"t5wkF0mUWzsA9B18UgYiDYcJOhnr3Aj/N6tPRnSwXmJlRTOcQH0K62Ix4EDjX+HZvw+3Y7UHAgK+2QOiWpFiKA==", "shopping"=>{"item"=>"Butter", "image"=>#<ActionDispatch::Http::UploadedFile:0x00007f935a8f0710 @tempfile=#<Tempfile:/var/folders/4t/9ncs7f753cb69kpnsfpc60v40000gn/T/RackMultipart20191229-23514-vgfos8.png>, @original_filename="butter.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"shopping[image]\"; filename=\"butter.png\"\r\nContent-Type: image/png\r\n">}, "commit"=>"Add to shopping list", "id"=>"1"}
+  [1m[36mShopping Load (0.2ms)[0m  [1m[34mSELECT  "shoppings".* FROM "shoppings" WHERE "shoppings"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveStorage::Attachment Load (0.1ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 1], ["record_type", "Shopping"], ["name", "image"], ["LIMIT", 1]]
+[36m  Disk Storage (2.3ms) [0m[32mUploaded file to key: 1nhL73eHHsZBD9ThyMBMoGBy (checksum: XAQgNSCX+3bs9+SZddwOuA==)[0m
+  [1m[36mActiveStorage::Blob Create (0.5ms)[0m  [1m[32mINSERT INTO "active_storage_blobs" ("key", "filename", "content_type", "metadata", "byte_size", "checksum", "created_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["key", "1nhL73eHHsZBD9ThyMBMoGBy"], ["filename", "butter.png"], ["content_type", "image/png"], ["metadata", "{\"identified\":true}"], ["byte_size", 18078], ["checksum", "XAQgNSCX+3bs9+SZddwOuA=="], ["created_at", "2019-12-29 17:26:23.252897"]]
+  [1m[36mActiveStorage::Attachment Create (0.3ms)[0m  [1m[32mINSERT INTO "active_storage_attachments" ("name", "record_type", "record_id", "blob_id", "created_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "image"], ["record_type", "Shopping"], ["record_id", 1], ["blob_id", 2], ["created_at", "2019-12-29 17:26:23.270475"]]
+  [1m[35m (2.0ms)[0m  [1m[36mcommit transaction[0m
+[ActiveJob] Enqueued ActiveStorage::AnalyzeJob (Job ID: c9e28f21-5cf1-4d2f-9eb4-e543c523a5a9) to Async(default) with arguments: #<GlobalID:0x00007f935c2c3020 @uri=#<URI::GID gid://shoppingapp/ActiveStorage::Blob/2>>
+Redirected to http://localhost:3000/shoppings.1
+Completed 302 Found in 76ms (ActiveRecord: 4.2ms)
+
+
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[ActiveJob] [ActiveStorage::AnalyzeJob] [c9e28f21-5cf1-4d2f-9eb4-e543c523a5a9] Performing ActiveStorage::AnalyzeJob (Job ID: c9e28f21-5cf1-4d2f-9eb4-e543c523a5a9) from Async(default) with arguments: #<GlobalID:0x00007f935c2b8a08 @uri=#<URI::GID gid://shoppingapp/ActiveStorage::Blob/2>>
+[ActiveJob] [ActiveStorage::AnalyzeJob] [c9e28f21-5cf1-4d2f-9eb4-e543c523a5a9] [36m  Disk Storage (0.3ms) [0m[34mDownloaded file from key: 1nhL73eHHsZBD9ThyMBMoGBy[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [c9e28f21-5cf1-4d2f-9eb4-e543c523a5a9] Skipping image analysis because the mini_magick gem isn't installed
+[ActiveJob] [ActiveStorage::AnalyzeJob] [c9e28f21-5cf1-4d2f-9eb4-e543c523a5a9]   [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [c9e28f21-5cf1-4d2f-9eb4-e543c523a5a9]   [1m[36mActiveStorage::Blob Update (0.4ms)[0m  [1m[33mUPDATE "active_storage_blobs" SET "metadata" = ? WHERE "active_storage_blobs"."id" = ?[0m  [["metadata", "{\"identified\":true,\"analyzed\":true}"], ["id", 2]]
+Started GET "/shoppings.1" for ::1 at 2019-12-29 17:26:23 +0000
+[ActiveJob] [ActiveStorage::AnalyzeJob] [c9e28f21-5cf1-4d2f-9eb4-e543c523a5a9]   [1m[35m (2.3ms)[0m  [1m[36mcommit transaction[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [c9e28f21-5cf1-4d2f-9eb4-e543c523a5a9] Performed ActiveStorage::AnalyzeJob (Job ID: c9e28f21-5cf1-4d2f-9eb4-e543c523a5a9) from Async(default) in 13.85ms
+Processing by ShoppingsController#index as 
+  Rendering shoppings/index.html.erb within layouts/application
+  Rendered layouts/_flash.html.erb (0.8ms)
+  [1m[36mShopping Load (0.2ms)[0m  [1m[34mSELECT "shoppings".* FROM "shoppings"[0m
+  Rendered layouts/_footer.html.erb (0.3ms)
+  Rendered shoppings/index.html.erb within layouts/application (79.5ms)
+  Rendered layouts/_navBar.html.erb (0.6ms)
+Completed 200 OK in 225ms (Views: 185.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/shoppings" for ::1 at 2019-12-29 17:29:38 +0000
+Processing by ShoppingsController#index as HTML
+  Rendering shoppings/index.html.erb within layouts/application
+  Rendered layouts/_flash.html.erb (0.6ms)
+  [1m[36mShopping Load (0.3ms)[0m  [1m[34mSELECT "shoppings".* FROM "shoppings"[0m
+  Rendered layouts/_footer.html.erb (0.3ms)
+  Rendered shoppings/index.html.erb within layouts/application (10.7ms)
+  Rendered layouts/_navBar.html.erb (0.6ms)
+Completed 200 OK in 72ms (Views: 60.9ms | ActiveRecord: 0.9ms)
+
+
+Started DELETE "/shoppings/1" for ::1 at 2019-12-29 17:29:41 +0000
+Processing by ShoppingsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"Dcc5Ww1yUL4de2UIa82xu+zaEstk4mQwQvubOo4jgq9wWU/INuIhZOEyucmoSpHUPEh2AzQfy7wMHPCEZxfDlA==", "id"=>"1"}
+  [1m[36mShopping Load (0.2ms)[0m  [1m[34mSELECT  "shoppings".* FROM "shoppings" WHERE "shoppings"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mShopping Destroy (0.5ms)[0m  [1m[31mDELETE FROM "shoppings" WHERE "shoppings"."id" = ?[0m  [["id", 1]]
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 1], ["record_type", "Shopping"], ["name", "image"], ["LIMIT", 1]]
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveStorage::Attachment Destroy (0.7ms)[0m  [1m[31mDELETE FROM "active_storage_attachments" WHERE "active_storage_attachments"."id" = ?[0m  [["id", 1]]
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+[ActiveJob] Enqueued ActiveStorage::PurgeJob (Job ID: 24b6241f-0f90-4457-9953-3ab9e49a0099) to Async(default) with arguments: #<GlobalID:0x00007f935ab58d18 @uri=#<URI::GID gid://shoppingapp/ActiveStorage::Blob/2>>
+Redirected to http://localhost:3000/shoppings
+Completed 302 Found in 50ms (ActiveRecord: 7.7ms)
+
+
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[ActiveJob] [ActiveStorage::PurgeJob] [24b6241f-0f90-4457-9953-3ab9e49a0099] Performing ActiveStorage::PurgeJob (Job ID: 24b6241f-0f90-4457-9953-3ab9e49a0099) from Async(default) with arguments: #<GlobalID:0x00007f935795f028 @uri=#<URI::GID gid://shoppingapp/ActiveStorage::Blob/2>>
+[ActiveJob] [ActiveStorage::PurgeJob] [24b6241f-0f90-4457-9953-3ab9e49a0099]   [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [24b6241f-0f90-4457-9953-3ab9e49a0099]   [1m[36mActiveStorage::Attachment Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "active_storage_attachments" WHERE "active_storage_attachments"."blob_id" = ? LIMIT ?[0m  [["blob_id", 2], ["LIMIT", 1]]
+[ActiveJob] [ActiveStorage::PurgeJob] [24b6241f-0f90-4457-9953-3ab9e49a0099]   [1m[36mActiveStorage::Blob Destroy (0.4ms)[0m  [1m[31mDELETE FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ?[0m  [["id", 2]]
+[ActiveJob] [ActiveStorage::PurgeJob] [24b6241f-0f90-4457-9953-3ab9e49a0099]   [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/shoppings" for ::1 at 2019-12-29 17:29:41 +0000
+Processing by ShoppingsController#index as HTML
+  Rendering shoppings/index.html.erb within layouts/application
+  Rendered layouts/_flash.html.erb (0.6ms)
+  [1m[36mShopping Load (0.2ms)[0m  [1m[34mSELECT "shoppings".* FROM "shoppings"[0m
+  Rendered layouts/_footer.html.erb (0.3ms)
+  Rendered shoppings/index.html.erb within layouts/application (9.3ms)
+[ActiveJob] [ActiveStorage::PurgeJob] [24b6241f-0f90-4457-9953-3ab9e49a0099]   [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 2], ["record_type", "ActiveStorage::Blob"], ["name", "preview_image"], ["LIMIT", 1]]
+[ActiveJob] [ActiveStorage::PurgeJob] [24b6241f-0f90-4457-9953-3ab9e49a0099] [36m  Disk Storage (0.2ms) [0m[31mDeleted file from key: 1nhL73eHHsZBD9ThyMBMoGBy[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [24b6241f-0f90-4457-9953-3ab9e49a0099] [36m  Disk Storage (0.1ms) [0m[31mDeleted files by key prefix: variants/1nhL73eHHsZBD9ThyMBMoGBy/[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [24b6241f-0f90-4457-9953-3ab9e49a0099] Performed ActiveStorage::PurgeJob (Job ID: 24b6241f-0f90-4457-9953-3ab9e49a0099) from Async(default) in 36.6ms
+  Rendered layouts/_navBar.html.erb (0.7ms)
+Completed 200 OK in 62ms (Views: 58.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/shoppings/new" for ::1 at 2019-12-29 17:29:44 +0000
+Processing by ShoppingsController#new as HTML
+  Rendering shoppings/new.html.erb within layouts/application
+  Rendered shoppings/_error.html.erb (0.5ms)
+  Rendered layouts/_flash.html.erb (0.5ms)
+  Rendered shoppings/_form.html.erb (4.1ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+  Rendered shoppings/new.html.erb within layouts/application (16.3ms)
+  Rendered layouts/_navBar.html.erb (0.6ms)
+Completed 200 OK in 71ms (Views: 65.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/shoppings/new" for ::1 at 2019-12-29 17:29:46 +0000
+Processing by ShoppingsController#new as HTML
+  Rendering shoppings/new.html.erb within layouts/application
+  Rendered shoppings/_error.html.erb (0.4ms)
+  Rendered layouts/_flash.html.erb (0.4ms)
+  Rendered shoppings/_form.html.erb (1.4ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+  Rendered shoppings/new.html.erb within layouts/application (12.6ms)
+  Rendered layouts/_navBar.html.erb (1.9ms)
+Completed 200 OK in 57ms (Views: 53.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/shoppings" for ::1 at 2019-12-29 17:29:54 +0000
+Processing by ShoppingsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"sO1zpIJyaVUASW5xt6vBUe9lnPLU/jHJzf74pY7yKNvNcwU3ueIYj/wAsrB0LOE+P/f4OoQDnkWDGZMbZ8Zp4A==", "shopping"=>{"item"=>"Butter", "image"=>#<ActionDispatch::Http::UploadedFile:0x00007f93562cbd98 @tempfile=#<Tempfile:/var/folders/4t/9ncs7f753cb69kpnsfpc60v40000gn/T/RackMultipart20191229-23514-n8wfry.png>, @original_filename="butter.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"shopping[image]\"; filename=\"butter.png\"\r\nContent-Type: image/png\r\n">}, "commit"=>"Add to shopping list"}
+[36m  Disk Storage (2.0ms) [0m[32mUploaded file to key: jUzKx9Vrig7xXjbqQVHqXYWG (checksum: XAQgNSCX+3bs9+SZddwOuA==)[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveStorage::Blob Create (0.6ms)[0m  [1m[32mINSERT INTO "active_storage_blobs" ("key", "filename", "content_type", "metadata", "byte_size", "checksum", "created_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["key", "jUzKx9Vrig7xXjbqQVHqXYWG"], ["filename", "butter.png"], ["content_type", "image/png"], ["metadata", "{\"identified\":true}"], ["byte_size", 18078], ["checksum", "XAQgNSCX+3bs9+SZddwOuA=="], ["created_at", "2019-12-29 17:29:54.619225"]]
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 2.1ms)
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass):
+  
+app/controllers/shoppings_controller.rb:9:in `create'
+Started GET "/shoppings/new" for ::1 at 2019-12-29 17:32:07 +0000
+Processing by ShoppingsController#new as HTML
+  Rendering shoppings/new.html.erb within layouts/application
+  Rendered shoppings/_error.html.erb (0.4ms)
+  Rendered layouts/_flash.html.erb (0.7ms)
+  Rendered shoppings/_form.html.erb (1.7ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+  Rendered shoppings/new.html.erb within layouts/application (15.1ms)
+  Rendered layouts/_navBar.html.erb (0.5ms)
+Completed 200 OK in 64ms (Views: 53.3ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/shoppings" for ::1 at 2019-12-29 17:32:15 +0000
+Processing by ShoppingsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"iq1wFJUImU6vHEibN9IRicxVSTPIxaBfWdcMZuYmrdr3MwaHrpjolFNVlFr0VTHmHMct+5g4D9MXMGfYDxLs4Q==", "shopping"=>{"item"=>"Butter", "image"=>#<ActionDispatch::Http::UploadedFile:0x00007f935c8800d0 @tempfile=#<Tempfile:/var/folders/4t/9ncs7f753cb69kpnsfpc60v40000gn/T/RackMultipart20191229-23514-1qhe5zi.png>, @original_filename="butter.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"shopping[image]\"; filename=\"butter.png\"\r\nContent-Type: image/png\r\n">}, "commit"=>"Add to shopping list"}
+[36m  Disk Storage (2.3ms) [0m[32mUploaded file to key: kQiK27BoPhs23gw8NT2XmpdW (checksum: XAQgNSCX+3bs9+SZddwOuA==)[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveStorage::Blob Create (0.5ms)[0m  [1m[32mINSERT INTO "active_storage_blobs" ("key", "filename", "content_type", "metadata", "byte_size", "checksum", "created_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["key", "kQiK27BoPhs23gw8NT2XmpdW"], ["filename", "butter.png"], ["content_type", "image/png"], ["metadata", "{\"identified\":true}"], ["byte_size", 18078], ["checksum", "XAQgNSCX+3bs9+SZddwOuA=="], ["created_at", "2019-12-29 17:32:15.799109"]]
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+Completed 500 Internal Server Error in 46ms (ActiveRecord: 4.0ms)
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass):
+  
+app/controllers/shoppings_controller.rb:9:in `create'
+Started GET "/shoppings/new" for ::1 at 2019-12-29 17:32:39 +0000
+Processing by ShoppingsController#new as HTML
+  Rendering shoppings/new.html.erb within layouts/application
+  Rendered shoppings/_error.html.erb (0.4ms)
+  Rendered layouts/_flash.html.erb (0.5ms)
+  Rendered shoppings/_form.html.erb (2.4ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+  Rendered shoppings/new.html.erb within layouts/application (14.1ms)
+  Rendered layouts/_navBar.html.erb (0.5ms)
+Completed 200 OK in 73ms (Views: 55.5ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/shoppings" for ::1 at 2019-12-29 17:32:49 +0000
+Processing by ShoppingsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"d853vbUzrbUJKc4hAuYnAzR8hK+XQiTtAfyFXA0PBpcKUAEujqPcb/VgEuDBYQds5O7gZ8e/i2FPG+7i5DtHrA==", "shopping"=>{"item"=>"Butter", "image"=>#<ActionDispatch::Http::UploadedFile:0x00007f935c137238 @tempfile=#<Tempfile:/var/folders/4t/9ncs7f753cb69kpnsfpc60v40000gn/T/RackMultipart20191229-23514-1elb3vq.png>, @original_filename="butter.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"shopping[image]\"; filename=\"butter.png\"\r\nContent-Type: image/png\r\n">}, "commit"=>"Add to shopping list"}
+[36m  Disk Storage (2.0ms) [0m[32mUploaded file to key: CLpBrDh332mhGWfq5WfTfxLC (checksum: XAQgNSCX+3bs9+SZddwOuA==)[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveStorage::Blob Create (0.7ms)[0m  [1m[32mINSERT INTO "active_storage_blobs" ("key", "filename", "content_type", "metadata", "byte_size", "checksum", "created_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["key", "CLpBrDh332mhGWfq5WfTfxLC"], ["filename", "butter.png"], ["content_type", "image/png"], ["metadata", "{\"identified\":true}"], ["byte_size", 18078], ["checksum", "XAQgNSCX+3bs9+SZddwOuA=="], ["created_at", "2019-12-29 17:32:49.989073"]]
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+[36m  Disk Storage (2.3ms) [0m[32mUploaded file to key: pyQqKgDTb3RzipfAzdkCmc9w (checksum: XAQgNSCX+3bs9+SZddwOuA==)[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveStorage::Blob Create (0.4ms)[0m  [1m[32mINSERT INTO "active_storage_blobs" ("key", "filename", "content_type", "metadata", "byte_size", "checksum", "created_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["key", "pyQqKgDTb3RzipfAzdkCmc9w"], ["filename", "butter.png"], ["content_type", "image/png"], ["metadata", "{\"identified\":true}"], ["byte_size", 18078], ["checksum", "XAQgNSCX+3bs9+SZddwOuA=="], ["created_at", "2019-12-29 17:32:50.006975"]]
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+[ActiveJob] Enqueued ActiveStorage::PurgeJob (Job ID: 9fb1911c-c4df-485c-b7de-2f2647267a23) to Async(default) with arguments: #<GlobalID:0x00007f9356fb2f70 @uri=#<URI::GID gid://shoppingapp/ActiveStorage::Blob/5>>
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mShopping Create (0.7ms)[0m  [1m[32mINSERT INTO "shoppings" ("item") VALUES (?)[0m  [["item", "Butter"]]
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+[ActiveJob] [ActiveStorage::PurgeJob] [9fb1911c-c4df-485c-b7de-2f2647267a23] Performing ActiveStorage::PurgeJob (Job ID: 9fb1911c-c4df-485c-b7de-2f2647267a23) from Async(default) with arguments: #<GlobalID:0x00007f93562e9e10 @uri=#<URI::GID gid://shoppingapp/ActiveStorage::Blob/5>>
+[ActiveJob] [ActiveStorage::PurgeJob] [9fb1911c-c4df-485c-b7de-2f2647267a23]   [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveStorage::Attachment Create (0.3ms)[0m  [1m[32mINSERT INTO "active_storage_attachments" ("name", "record_type", "record_id", "blob_id", "created_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "image"], ["record_type", "Shopping"], ["record_id", 2], ["blob_id", 6], ["created_at", "2019-12-29 17:32:50.021187"]]
+  [1m[35m (2.0ms)[0m  [1m[36mcommit transaction[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [9fb1911c-c4df-485c-b7de-2f2647267a23]   [1m[36mActiveStorage::Attachment Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "active_storage_attachments" WHERE "active_storage_attachments"."blob_id" = ? LIMIT ?[0m  [["blob_id", 5], ["LIMIT", 1]]
+[ActiveJob] [ActiveStorage::PurgeJob] [9fb1911c-c4df-485c-b7de-2f2647267a23]   [1m[36mActiveStorage::Blob Destroy (0.5ms)[0m  [1m[31mDELETE FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ?[0m  [["id", 5]]
+[ActiveJob] [ActiveStorage::PurgeJob] [9fb1911c-c4df-485c-b7de-2f2647267a23]   [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [9fb1911c-c4df-485c-b7de-2f2647267a23]   [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 5], ["record_type", "ActiveStorage::Blob"], ["name", "preview_image"], ["LIMIT", 1]]
+[ActiveJob] [ActiveStorage::PurgeJob] [9fb1911c-c4df-485c-b7de-2f2647267a23] [36m  Disk Storage (0.3ms) [0m[31mDeleted file from key: CLpBrDh332mhGWfq5WfTfxLC[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [9fb1911c-c4df-485c-b7de-2f2647267a23] [36m  Disk Storage (0.1ms) [0m[31mDeleted files by key prefix: variants/CLpBrDh332mhGWfq5WfTfxLC/[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [9fb1911c-c4df-485c-b7de-2f2647267a23] Performed ActiveStorage::PurgeJob (Job ID: 9fb1911c-c4df-485c-b7de-2f2647267a23) from Async(default) in 13.06ms
+[ActiveJob] Enqueued ActiveStorage::AnalyzeJob (Job ID: 115da9b3-a90a-4844-9412-fd0206cb9714) to Async(default) with arguments: #<GlobalID:0x00007f9356291eb8 @uri=#<URI::GID gid://shoppingapp/ActiveStorage::Blob/6>>
+Redirected to http://localhost:3000/shoppings.2
+Completed 302 Found in 96ms (ActiveRecord: 8.9ms)
+
+
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+[ActiveJob] [ActiveStorage::AnalyzeJob] [115da9b3-a90a-4844-9412-fd0206cb9714] Performing ActiveStorage::AnalyzeJob (Job ID: 115da9b3-a90a-4844-9412-fd0206cb9714) from Async(default) with arguments: #<GlobalID:0x00007f935c05b148 @uri=#<URI::GID gid://shoppingapp/ActiveStorage::Blob/6>>
+[ActiveJob] [ActiveStorage::AnalyzeJob] [115da9b3-a90a-4844-9412-fd0206cb9714] [36m  Disk Storage (1.1ms) [0m[34mDownloaded file from key: pyQqKgDTb3RzipfAzdkCmc9w[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [115da9b3-a90a-4844-9412-fd0206cb9714] Skipping image analysis because the mini_magick gem isn't installed
+[ActiveJob] [ActiveStorage::AnalyzeJob] [115da9b3-a90a-4844-9412-fd0206cb9714]   [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/shoppings.2" for ::1 at 2019-12-29 17:32:50 +0000
+[ActiveJob] [ActiveStorage::AnalyzeJob] [115da9b3-a90a-4844-9412-fd0206cb9714]   [1m[36mActiveStorage::Blob Update (0.4ms)[0m  [1m[33mUPDATE "active_storage_blobs" SET "metadata" = ? WHERE "active_storage_blobs"."id" = ?[0m  [["metadata", "{\"identified\":true,\"analyzed\":true}"], ["id", 6]]
+[ActiveJob] [ActiveStorage::AnalyzeJob] [115da9b3-a90a-4844-9412-fd0206cb9714]   [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [115da9b3-a90a-4844-9412-fd0206cb9714] Performed ActiveStorage::AnalyzeJob (Job ID: 115da9b3-a90a-4844-9412-fd0206cb9714) from Async(default) in 17.27ms
+Processing by ShoppingsController#index as 
+  Rendering shoppings/index.html.erb within layouts/application
+  Rendered layouts/_flash.html.erb (0.5ms)
+  [1m[36mShopping Load (0.2ms)[0m  [1m[34mSELECT "shoppings".* FROM "shoppings"[0m
+  Rendered layouts/_footer.html.erb (0.3ms)
+  Rendered shoppings/index.html.erb within layouts/application (78.3ms)
+  Rendered layouts/_navBar.html.erb (0.9ms)
+Completed 200 OK in 220ms (Views: 185.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/shoppings/2" for ::1 at 2019-12-29 17:33:03 +0000
+Processing by ShoppingsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mShopping Load (0.4ms)[0m  [1m[34mSELECT  "shoppings".* FROM "shoppings" WHERE "shoppings"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering shoppings/show.html.erb within layouts/application
+  Rendered layouts/_flash.html.erb (0.6ms)
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 2], ["record_type", "Shopping"], ["name", "image"], ["LIMIT", 1]]
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  Rendered layouts/_footer.html.erb (0.6ms)
+  Rendered shoppings/show.html.erb within layouts/application (19.9ms)
+  Rendered layouts/_navBar.html.erb (0.5ms)
+Completed 200 OK in 88ms (Views: 80.3ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBDdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--6ff4ada335c45a8a3c6b09110dd35003a2c7be8c/butter.png" for ::1 at 2019-12-29 17:33:04 +0000
+Processing by ActiveStorage::BlobsController#show as PNG
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBDdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--6ff4ada335c45a8a3c6b09110dd35003a2c7be8c", "filename"=>"butter"}
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+[36m  Disk Storage (1.5ms) [0m[34mGenerated URL for file at key: pyQqKgDTb3RzipfAzdkCmc9w (http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRjSGxSY1V0blJGUmlNMUo2YVhCbVFYcGthME50WXpsM0Jqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSS9hVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGlZblYwZEdWeUxuQnVaeUk3SUdacGJHVnVZVzFsS2oxVlZFWXRPQ2NuWW5WMGRHVnlMbkJ1WndZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraURtbHRZV2RsTDNCdVp3WTdCbFE9IiwiZXhwIjoiMjAxOS0xMi0yOVQxNzozODowNC4wNjlaIiwicHVyIjoiYmxvYl9rZXkifX0=--0c73dca237a9615a81335ec69281595f20891646/butter.png?content_type=image%2Fpng&disposition=inline%3B+filename%3D%22butter.png%22%3B+filename%2A%3DUTF-8%27%27butter.png)[0m
+Redirected to http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRjSGxSY1V0blJGUmlNMUo2YVhCbVFYcGthME50WXpsM0Jqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSS9hVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGlZblYwZEdWeUxuQnVaeUk3SUdacGJHVnVZVzFsS2oxVlZFWXRPQ2NuWW5WMGRHVnlMbkJ1WndZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraURtbHRZV2RsTDNCdVp3WTdCbFE9IiwiZXhwIjoiMjAxOS0xMi0yOVQxNzozODowNC4wNjlaIiwicHVyIjoiYmxvYl9rZXkifX0=--0c73dca237a9615a81335ec69281595f20891646/butter.png?content_type=image%2Fpng&disposition=inline%3B+filename%3D%22butter.png%22%3B+filename%2A%3DUTF-8%27%27butter.png
+Completed 302 Found in 15ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRjSGxSY1V0blJGUmlNMUo2YVhCbVFYcGthME50WXpsM0Jqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSS9hVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGlZblYwZEdWeUxuQnVaeUk3SUdacGJHVnVZVzFsS2oxVlZFWXRPQ2NuWW5WMGRHVnlMbkJ1WndZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraURtbHRZV2RsTDNCdVp3WTdCbFE9IiwiZXhwIjoiMjAxOS0xMi0yOVQxNzozODowNC4wNjlaIiwicHVyIjoiYmxvYl9rZXkifX0=--0c73dca237a9615a81335ec69281595f20891646/butter.png?content_type=image%2Fpng&disposition=inline%3B+filename%3D%22butter.png%22%3B+filename%2A%3DUTF-8%27%27butter.png" for ::1 at 2019-12-29 17:33:04 +0000
+Processing by ActiveStorage::DiskController#show as PNG
+  Parameters: {"content_type"=>"image/png", "disposition"=>"inline; filename=\"butter.png\"; filename*=UTF-8''butter.png", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRjSGxSY1V0blJGUmlNMUo2YVhCbVFYcGthME50WXpsM0Jqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSS9hVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGlZblYwZEdWeUxuQnVaeUk3SUdacGJHVnVZVzFsS2oxVlZFWXRPQ2NuWW5WMGRHVnlMbkJ1WndZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraURtbHRZV2RsTDNCdVp3WTdCbFE9IiwiZXhwIjoiMjAxOS0xMi0yOVQxNzozODowNC4wNjlaIiwicHVyIjoiYmxvYl9rZXkifX0=--0c73dca237a9615a81335ec69281595f20891646", "filename"=>"butter"}
+Completed 200 OK in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/shoppings/2" for ::1 at 2019-12-29 17:42:13 +0000
+Processing by ShoppingsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mShopping Load (0.5ms)[0m  [1m[34mSELECT  "shoppings".* FROM "shoppings" WHERE "shoppings"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering shoppings/show.html.erb within layouts/application
+  Rendered layouts/_flash.html.erb (0.5ms)
+  [1m[36mActiveStorage::Attachment Load (0.8ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 2], ["record_type", "Shopping"], ["name", "image"], ["LIMIT", 1]]
+  [1m[36mActiveStorage::Blob Load (0.4ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  Rendered layouts/_footer.html.erb (0.3ms)
+  Rendered shoppings/show.html.erb within layouts/application (15.8ms)
+  Rendered layouts/_navBar.html.erb (0.6ms)
+Completed 200 OK in 106ms (Views: 97.2ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBDdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--6ff4ada335c45a8a3c6b09110dd35003a2c7be8c/butter.png" for ::1 at 2019-12-29 17:42:13 +0000
+Processing by ActiveStorage::BlobsController#show as PNG
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBDdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--6ff4ada335c45a8a3c6b09110dd35003a2c7be8c", "filename"=>"butter"}
+  [1m[36mActiveStorage::Blob Load (0.1ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+[36m  Disk Storage (0.4ms) [0m[34mGenerated URL for file at key: pyQqKgDTb3RzipfAzdkCmc9w (http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRjSGxSY1V0blJGUmlNMUo2YVhCbVFYcGthME50WXpsM0Jqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSS9hVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGlZblYwZEdWeUxuQnVaeUk3SUdacGJHVnVZVzFsS2oxVlZFWXRPQ2NuWW5WMGRHVnlMbkJ1WndZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraURtbHRZV2RsTDNCdVp3WTdCbFE9IiwiZXhwIjoiMjAxOS0xMi0yOVQxNzo0NzoxMy4zODhaIiwicHVyIjoiYmxvYl9rZXkifX0=--750eb56c7e410d6f13f492db5349afcc6a06b232/butter.png?content_type=image%2Fpng&disposition=inline%3B+filename%3D%22butter.png%22%3B+filename%2A%3DUTF-8%27%27butter.png)[0m
+Redirected to http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRjSGxSY1V0blJGUmlNMUo2YVhCbVFYcGthME50WXpsM0Jqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSS9hVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGlZblYwZEdWeUxuQnVaeUk3SUdacGJHVnVZVzFsS2oxVlZFWXRPQ2NuWW5WMGRHVnlMbkJ1WndZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraURtbHRZV2RsTDNCdVp3WTdCbFE9IiwiZXhwIjoiMjAxOS0xMi0yOVQxNzo0NzoxMy4zODhaIiwicHVyIjoiYmxvYl9rZXkifX0=--750eb56c7e410d6f13f492db5349afcc6a06b232/butter.png?content_type=image%2Fpng&disposition=inline%3B+filename%3D%22butter.png%22%3B+filename%2A%3DUTF-8%27%27butter.png
+Completed 302 Found in 3ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRjSGxSY1V0blJGUmlNMUo2YVhCbVFYcGthME50WXpsM0Jqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSS9hVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGlZblYwZEdWeUxuQnVaeUk3SUdacGJHVnVZVzFsS2oxVlZFWXRPQ2NuWW5WMGRHVnlMbkJ1WndZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraURtbHRZV2RsTDNCdVp3WTdCbFE9IiwiZXhwIjoiMjAxOS0xMi0yOVQxNzo0NzoxMy4zODhaIiwicHVyIjoiYmxvYl9rZXkifX0=--750eb56c7e410d6f13f492db5349afcc6a06b232/butter.png?content_type=image%2Fpng&disposition=inline%3B+filename%3D%22butter.png%22%3B+filename%2A%3DUTF-8%27%27butter.png" for ::1 at 2019-12-29 17:42:13 +0000
+Processing by ActiveStorage::DiskController#show as PNG
+  Parameters: {"content_type"=>"image/png", "disposition"=>"inline; filename=\"butter.png\"; filename*=UTF-8''butter.png", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRjSGxSY1V0blJGUmlNMUo2YVhCbVFYcGthME50WXpsM0Jqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSS9hVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGlZblYwZEdWeUxuQnVaeUk3SUdacGJHVnVZVzFsS2oxVlZFWXRPQ2NuWW5WMGRHVnlMbkJ1WndZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraURtbHRZV2RsTDNCdVp3WTdCbFE9IiwiZXhwIjoiMjAxOS0xMi0yOVQxNzo0NzoxMy4zODhaIiwicHVyIjoiYmxvYl9rZXkifX0=--750eb56c7e410d6f13f492db5349afcc6a06b232", "filename"=>"butter"}
+Completed 200 OK in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/shoppings" for ::1 at 2019-12-29 17:42:15 +0000
+Processing by ShoppingsController#index as HTML
+  Rendering shoppings/index.html.erb within layouts/application
+  Rendered layouts/_flash.html.erb (0.7ms)
+  [1m[36mShopping Load (0.2ms)[0m  [1m[34mSELECT "shoppings".* FROM "shoppings"[0m
+  [1m[36mActiveStorage::Attachment Load (0.1ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 2], ["record_type", "Shopping"], ["name", "image"], ["LIMIT", 1]]
+  [1m[36mActiveStorage::Blob Load (0.1ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  Rendered layouts/_footer.html.erb (0.3ms)
+  Rendered shoppings/index.html.erb within layouts/application (10.5ms)
+  Rendered layouts/_navBar.html.erb (0.5ms)
+Completed 200 OK in 81ms (Views: 52.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/shoppings" for ::1 at 2019-12-29 17:43:42 +0000
+Processing by ShoppingsController#index as HTML
+  Rendering shoppings/index.html.erb within layouts/application
+  Rendered layouts/_flash.html.erb (0.6ms)
+  [1m[36mShopping Load (0.2ms)[0m  [1m[34mSELECT "shoppings".* FROM "shoppings"[0m
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 2], ["record_type", "Shopping"], ["name", "image"], ["LIMIT", 1]]
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  Rendered layouts/_footer.html.erb (0.4ms)
+  Rendered shoppings/index.html.erb within layouts/application (17.1ms)
+  Rendered layouts/_navBar.html.erb (0.7ms)
+Completed 200 OK in 72ms (Views: 67.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRjSGxSY1V0blJGUmlNMUo2YVhCbVFYcGthME50WXpsM0Jqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSS9hVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGlZblYwZEdWeUxuQnVaeUk3SUdacGJHVnVZVzFsS2oxVlZFWXRPQ2NuWW5WMGRHVnlMbkJ1WndZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraURtbHRZV2RsTDNCdVp3WTdCbFE9IiwiZXhwIjoiMjAxOS0xMi0yOVQxNzo0NzoxMy4zODhaIiwicHVyIjoiYmxvYl9rZXkifX0=--750eb56c7e410d6f13f492db5349afcc6a06b232/butter.png?content_type=image%2Fpng&disposition=inline%3B+filename%3D%22butter.png%22%3B+filename%2A%3DUTF-8%27%27butter.png" for ::1 at 2019-12-29 17:43:42 +0000
+Processing by ActiveStorage::DiskController#show as PNG
+  Parameters: {"content_type"=>"image/png", "disposition"=>"inline; filename=\"butter.png\"; filename*=UTF-8''butter.png", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRjSGxSY1V0blJGUmlNMUo2YVhCbVFYcGthME50WXpsM0Jqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSS9hVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGlZblYwZEdWeUxuQnVaeUk3SUdacGJHVnVZVzFsS2oxVlZFWXRPQ2NuWW5WMGRHVnlMbkJ1WndZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraURtbHRZV2RsTDNCdVp3WTdCbFE9IiwiZXhwIjoiMjAxOS0xMi0yOVQxNzo0NzoxMy4zODhaIiwicHVyIjoiYmxvYl9rZXkifX0=--750eb56c7e410d6f13f492db5349afcc6a06b232", "filename"=>"butter"}
+Completed 304 Not Modified in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/shoppings" for ::1 at 2019-12-29 17:54:12 +0000
+Processing by ShoppingsController#index as HTML
+  Rendering shoppings/index.html.erb within layouts/application
+  Rendered layouts/_flash.html.erb (0.5ms)
+  [1m[36mShopping Load (7.6ms)[0m  [1m[34mSELECT "shoppings".* FROM "shoppings"[0m
+  [1m[36mActiveStorage::Attachment Load (0.7ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 2], ["record_type", "Shopping"], ["name", "image"], ["LIMIT", 1]]
+  [1m[36mActiveStorage::Blob Load (0.4ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  Rendered layouts/_footer.html.erb (0.4ms)
+  Rendered shoppings/index.html.erb within layouts/application (24.6ms)
+  Rendered layouts/_navBar.html.erb (1.1ms)
+Completed 200 OK in 2188ms (Views: 2175.9ms | ActiveRecord: 8.7ms)
+
+
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBDdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--6ff4ada335c45a8a3c6b09110dd35003a2c7be8c/butter.png" for ::1 at 2019-12-29 17:54:14 +0000
+Processing by ActiveStorage::BlobsController#show as PNG
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBDdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--6ff4ada335c45a8a3c6b09110dd35003a2c7be8c", "filename"=>"butter"}
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+[36m  Disk Storage (0.4ms) [0m[34mGenerated URL for file at key: pyQqKgDTb3RzipfAzdkCmc9w (http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRjSGxSY1V0blJGUmlNMUo2YVhCbVFYcGthME50WXpsM0Jqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSS9hVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGlZblYwZEdWeUxuQnVaeUk3SUdacGJHVnVZVzFsS2oxVlZFWXRPQ2NuWW5WMGRHVnlMbkJ1WndZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraURtbHRZV2RsTDNCdVp3WTdCbFE9IiwiZXhwIjoiMjAxOS0xMi0yOVQxNzo1OToxNC40MTJaIiwicHVyIjoiYmxvYl9rZXkifX0=--d73ecb90709de5664027d7e46dca4885908cf2de/butter.png?content_type=image%2Fpng&disposition=inline%3B+filename%3D%22butter.png%22%3B+filename%2A%3DUTF-8%27%27butter.png)[0m
+Redirected to http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRjSGxSY1V0blJGUmlNMUo2YVhCbVFYcGthME50WXpsM0Jqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSS9hVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGlZblYwZEdWeUxuQnVaeUk3SUdacGJHVnVZVzFsS2oxVlZFWXRPQ2NuWW5WMGRHVnlMbkJ1WndZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraURtbHRZV2RsTDNCdVp3WTdCbFE9IiwiZXhwIjoiMjAxOS0xMi0yOVQxNzo1OToxNC40MTJaIiwicHVyIjoiYmxvYl9rZXkifX0=--d73ecb90709de5664027d7e46dca4885908cf2de/butter.png?content_type=image%2Fpng&disposition=inline%3B+filename%3D%22butter.png%22%3B+filename%2A%3DUTF-8%27%27butter.png
+Completed 302 Found in 5ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRjSGxSY1V0blJGUmlNMUo2YVhCbVFYcGthME50WXpsM0Jqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSS9hVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGlZblYwZEdWeUxuQnVaeUk3SUdacGJHVnVZVzFsS2oxVlZFWXRPQ2NuWW5WMGRHVnlMbkJ1WndZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraURtbHRZV2RsTDNCdVp3WTdCbFE9IiwiZXhwIjoiMjAxOS0xMi0yOVQxNzo1OToxNC40MTJaIiwicHVyIjoiYmxvYl9rZXkifX0=--d73ecb90709de5664027d7e46dca4885908cf2de/butter.png?content_type=image%2Fpng&disposition=inline%3B+filename%3D%22butter.png%22%3B+filename%2A%3DUTF-8%27%27butter.png" for ::1 at 2019-12-29 17:54:14 +0000
+Processing by ActiveStorage::DiskController#show as PNG
+  Parameters: {"content_type"=>"image/png", "disposition"=>"inline; filename=\"butter.png\"; filename*=UTF-8''butter.png", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRjSGxSY1V0blJGUmlNMUo2YVhCbVFYcGthME50WXpsM0Jqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSS9hVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGlZblYwZEdWeUxuQnVaeUk3SUdacGJHVnVZVzFsS2oxVlZFWXRPQ2NuWW5WMGRHVnlMbkJ1WndZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraURtbHRZV2RsTDNCdVp3WTdCbFE9IiwiZXhwIjoiMjAxOS0xMi0yOVQxNzo1OToxNC40MTJaIiwicHVyIjoiYmxvYl9rZXkifX0=--d73ecb90709de5664027d7e46dca4885908cf2de", "filename"=>"butter"}
+Completed 200 OK in 4ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/shoppings" for ::1 at 2019-12-29 17:54:31 +0000
+Processing by ShoppingsController#index as HTML
+  Rendering shoppings/index.html.erb within layouts/application
+  Rendered layouts/_flash.html.erb (1.6ms)
+  [1m[36mShopping Load (0.1ms)[0m  [1m[34mSELECT "shoppings".* FROM "shoppings"[0m
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 2], ["record_type", "Shopping"], ["name", "image"], ["LIMIT", 1]]
+  [1m[36mActiveStorage::Blob Load (0.1ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  Rendered layouts/_footer.html.erb (0.3ms)
+  Rendered shoppings/index.html.erb within layouts/application (20.4ms)
+  Rendered layouts/_navBar.html.erb (0.5ms)
+Completed 200 OK in 144ms (Views: 128.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBDdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--6ff4ada335c45a8a3c6b09110dd35003a2c7be8c/butter.png" for ::1 at 2019-12-29 17:54:31 +0000
+Processing by ActiveStorage::BlobsController#show as PNG
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBDdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--6ff4ada335c45a8a3c6b09110dd35003a2c7be8c", "filename"=>"butter"}
+  [1m[36mActiveStorage::Blob Load (8.1ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+[36m  Disk Storage (0.9ms) [0m[34mGenerated URL for file at key: pyQqKgDTb3RzipfAzdkCmc9w (http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRjSGxSY1V0blJGUmlNMUo2YVhCbVFYcGthME50WXpsM0Jqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSS9hVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGlZblYwZEdWeUxuQnVaeUk3SUdacGJHVnVZVzFsS2oxVlZFWXRPQ2NuWW5WMGRHVnlMbkJ1WndZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraURtbHRZV2RsTDNCdVp3WTdCbFE9IiwiZXhwIjoiMjAxOS0xMi0yOVQxNzo1OTozMS42MjBaIiwicHVyIjoiYmxvYl9rZXkifX0=--905ef2c6417bf028e9d468b442692f713d6238c6/butter.png?content_type=image%2Fpng&disposition=inline%3B+filename%3D%22butter.png%22%3B+filename%2A%3DUTF-8%27%27butter.png)[0m
+Redirected to http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRjSGxSY1V0blJGUmlNMUo2YVhCbVFYcGthME50WXpsM0Jqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSS9hVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGlZblYwZEdWeUxuQnVaeUk3SUdacGJHVnVZVzFsS2oxVlZFWXRPQ2NuWW5WMGRHVnlMbkJ1WndZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraURtbHRZV2RsTDNCdVp3WTdCbFE9IiwiZXhwIjoiMjAxOS0xMi0yOVQxNzo1OTozMS42MjBaIiwicHVyIjoiYmxvYl9rZXkifX0=--905ef2c6417bf028e9d468b442692f713d6238c6/butter.png?content_type=image%2Fpng&disposition=inline%3B+filename%3D%22butter.png%22%3B+filename%2A%3DUTF-8%27%27butter.png
+Completed 302 Found in 16ms (ActiveRecord: 8.1ms)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRjSGxSY1V0blJGUmlNMUo2YVhCbVFYcGthME50WXpsM0Jqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSS9hVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGlZblYwZEdWeUxuQnVaeUk3SUdacGJHVnVZVzFsS2oxVlZFWXRPQ2NuWW5WMGRHVnlMbkJ1WndZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraURtbHRZV2RsTDNCdVp3WTdCbFE9IiwiZXhwIjoiMjAxOS0xMi0yOVQxNzo1OTozMS42MjBaIiwicHVyIjoiYmxvYl9rZXkifX0=--905ef2c6417bf028e9d468b442692f713d6238c6/butter.png?content_type=image%2Fpng&disposition=inline%3B+filename%3D%22butter.png%22%3B+filename%2A%3DUTF-8%27%27butter.png" for ::1 at 2019-12-29 17:54:31 +0000
+Processing by ActiveStorage::DiskController#show as PNG
+  Parameters: {"content_type"=>"image/png", "disposition"=>"inline; filename=\"butter.png\"; filename*=UTF-8''butter.png", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRjSGxSY1V0blJGUmlNMUo2YVhCbVFYcGthME50WXpsM0Jqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSS9hVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGlZblYwZEdWeUxuQnVaeUk3SUdacGJHVnVZVzFsS2oxVlZFWXRPQ2NuWW5WMGRHVnlMbkJ1WndZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraURtbHRZV2RsTDNCdVp3WTdCbFE9IiwiZXhwIjoiMjAxOS0xMi0yOVQxNzo1OTozMS42MjBaIiwicHVyIjoiYmxvYl9rZXkifX0=--905ef2c6417bf028e9d468b442692f713d6238c6", "filename"=>"butter"}
+Completed 200 OK in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/shoppings" for ::1 at 2019-12-29 17:55:08 +0000
+Processing by ShoppingsController#index as HTML
+  Rendering shoppings/index.html.erb within layouts/application
+  Rendered layouts/_flash.html.erb (0.7ms)
+  [1m[36mShopping Load (7.1ms)[0m  [1m[34mSELECT "shoppings".* FROM "shoppings"[0m
+  [1m[36mActiveStorage::Attachment Load (0.7ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 2], ["record_type", "Shopping"], ["name", "image"], ["LIMIT", 1]]
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  Rendered layouts/_footer.html.erb (0.3ms)
+  Rendered shoppings/index.html.erb within layouts/application (23.7ms)
+  Rendered layouts/_navBar.html.erb (0.8ms)
+Completed 200 OK in 2089ms (Views: 2073.1ms | ActiveRecord: 8.0ms)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRjSGxSY1V0blJGUmlNMUo2YVhCbVFYcGthME50WXpsM0Jqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSS9hVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGlZblYwZEdWeUxuQnVaeUk3SUdacGJHVnVZVzFsS2oxVlZFWXRPQ2NuWW5WMGRHVnlMbkJ1WndZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraURtbHRZV2RsTDNCdVp3WTdCbFE9IiwiZXhwIjoiMjAxOS0xMi0yOVQxNzo1OTozMS42MjBaIiwicHVyIjoiYmxvYl9rZXkifX0=--905ef2c6417bf028e9d468b442692f713d6238c6/butter.png?content_type=image%2Fpng&disposition=inline%3B+filename%3D%22butter.png%22%3B+filename%2A%3DUTF-8%27%27butter.png" for ::1 at 2019-12-29 17:55:10 +0000
+Processing by ActiveStorage::DiskController#show as PNG
+  Parameters: {"content_type"=>"image/png", "disposition"=>"inline; filename=\"butter.png\"; filename*=UTF-8''butter.png", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRjSGxSY1V0blJGUmlNMUo2YVhCbVFYcGthME50WXpsM0Jqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSS9hVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGlZblYwZEdWeUxuQnVaeUk3SUdacGJHVnVZVzFsS2oxVlZFWXRPQ2NuWW5WMGRHVnlMbkJ1WndZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraURtbHRZV2RsTDNCdVp3WTdCbFE9IiwiZXhwIjoiMjAxOS0xMi0yOVQxNzo1OTozMS42MjBaIiwicHVyIjoiYmxvYl9rZXkifX0=--905ef2c6417bf028e9d468b442692f713d6238c6", "filename"=>"butter"}
+Completed 304 Not Modified in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/shoppings" for ::1 at 2019-12-29 17:55:13 +0000
+Processing by ShoppingsController#index as HTML
+  Rendering shoppings/index.html.erb within layouts/application
+  Rendered layouts/_flash.html.erb (0.7ms)
+  [1m[36mShopping Load (0.2ms)[0m  [1m[34mSELECT "shoppings".* FROM "shoppings"[0m
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 2], ["record_type", "Shopping"], ["name", "image"], ["LIMIT", 1]]
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  Rendered layouts/_footer.html.erb (0.3ms)
+  Rendered shoppings/index.html.erb within layouts/application (13.2ms)
+  Rendered layouts/_navBar.html.erb (1.1ms)
+Completed 200 OK in 74ms (Views: 68.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBDdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--6ff4ada335c45a8a3c6b09110dd35003a2c7be8c/butter.png" for ::1 at 2019-12-29 17:55:14 +0000
+Processing by ActiveStorage::BlobsController#show as PNG
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBDdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--6ff4ada335c45a8a3c6b09110dd35003a2c7be8c", "filename"=>"butter"}
+  [1m[36mActiveStorage::Blob Load (10.8ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+[36m  Disk Storage (1.0ms) [0m[34mGenerated URL for file at key: pyQqKgDTb3RzipfAzdkCmc9w (http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRjSGxSY1V0blJGUmlNMUo2YVhCbVFYcGthME50WXpsM0Jqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSS9hVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGlZblYwZEdWeUxuQnVaeUk3SUdacGJHVnVZVzFsS2oxVlZFWXRPQ2NuWW5WMGRHVnlMbkJ1WndZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraURtbHRZV2RsTDNCdVp3WTdCbFE9IiwiZXhwIjoiMjAxOS0xMi0yOVQxODowMDoxNC4wODRaIiwicHVyIjoiYmxvYl9rZXkifX0=--9f0a44ea52efc2b53d4fd8ff2c7c08016c723861/butter.png?content_type=image%2Fpng&disposition=inline%3B+filename%3D%22butter.png%22%3B+filename%2A%3DUTF-8%27%27butter.png)[0m
+Redirected to http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRjSGxSY1V0blJGUmlNMUo2YVhCbVFYcGthME50WXpsM0Jqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSS9hVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGlZblYwZEdWeUxuQnVaeUk3SUdacGJHVnVZVzFsS2oxVlZFWXRPQ2NuWW5WMGRHVnlMbkJ1WndZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraURtbHRZV2RsTDNCdVp3WTdCbFE9IiwiZXhwIjoiMjAxOS0xMi0yOVQxODowMDoxNC4wODRaIiwicHVyIjoiYmxvYl9rZXkifX0=--9f0a44ea52efc2b53d4fd8ff2c7c08016c723861/butter.png?content_type=image%2Fpng&disposition=inline%3B+filename%3D%22butter.png%22%3B+filename%2A%3DUTF-8%27%27butter.png
+Completed 302 Found in 18ms (ActiveRecord: 10.8ms)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRjSGxSY1V0blJGUmlNMUo2YVhCbVFYcGthME50WXpsM0Jqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSS9hVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGlZblYwZEdWeUxuQnVaeUk3SUdacGJHVnVZVzFsS2oxVlZFWXRPQ2NuWW5WMGRHVnlMbkJ1WndZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraURtbHRZV2RsTDNCdVp3WTdCbFE9IiwiZXhwIjoiMjAxOS0xMi0yOVQxODowMDoxNC4wODRaIiwicHVyIjoiYmxvYl9rZXkifX0=--9f0a44ea52efc2b53d4fd8ff2c7c08016c723861/butter.png?content_type=image%2Fpng&disposition=inline%3B+filename%3D%22butter.png%22%3B+filename%2A%3DUTF-8%27%27butter.png" for ::1 at 2019-12-29 17:55:14 +0000
+Processing by ActiveStorage::DiskController#show as PNG
+  Parameters: {"content_type"=>"image/png", "disposition"=>"inline; filename=\"butter.png\"; filename*=UTF-8''butter.png", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRjSGxSY1V0blJGUmlNMUo2YVhCbVFYcGthME50WXpsM0Jqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSS9hVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGlZblYwZEdWeUxuQnVaeUk3SUdacGJHVnVZVzFsS2oxVlZFWXRPQ2NuWW5WMGRHVnlMbkJ1WndZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraURtbHRZV2RsTDNCdVp3WTdCbFE9IiwiZXhwIjoiMjAxOS0xMi0yOVQxODowMDoxNC4wODRaIiwicHVyIjoiYmxvYl9rZXkifX0=--9f0a44ea52efc2b53d4fd8ff2c7c08016c723861", "filename"=>"butter"}
+Completed 200 OK in 3ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/shoppings" for ::1 at 2019-12-29 17:56:11 +0000
+Processing by ShoppingsController#index as HTML
+  Rendering shoppings/index.html.erb within layouts/application
+  Rendered layouts/_flash.html.erb (0.9ms)
+  [1m[36mShopping Load (0.3ms)[0m  [1m[34mSELECT "shoppings".* FROM "shoppings"[0m
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 2], ["record_type", "Shopping"], ["name", "image"], ["LIMIT", 1]]
+  [1m[36mActiveStorage::Blob Load (0.6ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  Rendered layouts/_footer.html.erb (1.1ms)
+  Rendered shoppings/index.html.erb within layouts/application (13.8ms)
+  Rendered layouts/_navBar.html.erb (1.0ms)
+Completed 200 OK in 1982ms (Views: 1972.7ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRjSGxSY1V0blJGUmlNMUo2YVhCbVFYcGthME50WXpsM0Jqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSS9hVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGlZblYwZEdWeUxuQnVaeUk3SUdacGJHVnVZVzFsS2oxVlZFWXRPQ2NuWW5WMGRHVnlMbkJ1WndZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraURtbHRZV2RsTDNCdVp3WTdCbFE9IiwiZXhwIjoiMjAxOS0xMi0yOVQxODowMDoxNC4wODRaIiwicHVyIjoiYmxvYl9rZXkifX0=--9f0a44ea52efc2b53d4fd8ff2c7c08016c723861/butter.png?content_type=image%2Fpng&disposition=inline%3B+filename%3D%22butter.png%22%3B+filename%2A%3DUTF-8%27%27butter.png" for ::1 at 2019-12-29 17:56:13 +0000
+Processing by ActiveStorage::DiskController#show as PNG
+  Parameters: {"content_type"=>"image/png", "disposition"=>"inline; filename=\"butter.png\"; filename*=UTF-8''butter.png", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRjSGxSY1V0blJGUmlNMUo2YVhCbVFYcGthME50WXpsM0Jqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSS9hVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGlZblYwZEdWeUxuQnVaeUk3SUdacGJHVnVZVzFsS2oxVlZFWXRPQ2NuWW5WMGRHVnlMbkJ1WndZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraURtbHRZV2RsTDNCdVp3WTdCbFE9IiwiZXhwIjoiMjAxOS0xMi0yOVQxODowMDoxNC4wODRaIiwicHVyIjoiYmxvYl9rZXkifX0=--9f0a44ea52efc2b53d4fd8ff2c7c08016c723861", "filename"=>"butter"}
+Completed 304 Not Modified in 3ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/shoppings" for ::1 at 2019-12-29 17:56:17 +0000
+Processing by ShoppingsController#index as HTML
+  Rendering shoppings/index.html.erb within layouts/application
+  Rendered layouts/_flash.html.erb (0.8ms)
+  [1m[36mShopping Load (0.2ms)[0m  [1m[34mSELECT "shoppings".* FROM "shoppings"[0m
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 2], ["record_type", "Shopping"], ["name", "image"], ["LIMIT", 1]]
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  Rendered layouts/_footer.html.erb (0.3ms)
+  Rendered shoppings/index.html.erb within layouts/application (13.2ms)
+  Rendered layouts/_navBar.html.erb (0.6ms)
+Completed 200 OK in 77ms (Views: 71.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBDdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--6ff4ada335c45a8a3c6b09110dd35003a2c7be8c/butter.png" for ::1 at 2019-12-29 17:56:17 +0000
+Processing by ActiveStorage::BlobsController#show as PNG
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBDdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--6ff4ada335c45a8a3c6b09110dd35003a2c7be8c", "filename"=>"butter"}
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+[36m  Disk Storage (1.2ms) [0m[34mGenerated URL for file at key: pyQqKgDTb3RzipfAzdkCmc9w (http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRjSGxSY1V0blJGUmlNMUo2YVhCbVFYcGthME50WXpsM0Jqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSS9hVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGlZblYwZEdWeUxuQnVaeUk3SUdacGJHVnVZVzFsS2oxVlZFWXRPQ2NuWW5WMGRHVnlMbkJ1WndZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraURtbHRZV2RsTDNCdVp3WTdCbFE9IiwiZXhwIjoiMjAxOS0xMi0yOVQxODowMToxNy4zNDNaIiwicHVyIjoiYmxvYl9rZXkifX0=--178137f61418093401294b41b6b91396b06e354d/butter.png?content_type=image%2Fpng&disposition=inline%3B+filename%3D%22butter.png%22%3B+filename%2A%3DUTF-8%27%27butter.png)[0m
+Redirected to http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRjSGxSY1V0blJGUmlNMUo2YVhCbVFYcGthME50WXpsM0Jqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSS9hVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGlZblYwZEdWeUxuQnVaeUk3SUdacGJHVnVZVzFsS2oxVlZFWXRPQ2NuWW5WMGRHVnlMbkJ1WndZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraURtbHRZV2RsTDNCdVp3WTdCbFE9IiwiZXhwIjoiMjAxOS0xMi0yOVQxODowMToxNy4zNDNaIiwicHVyIjoiYmxvYl9rZXkifX0=--178137f61418093401294b41b6b91396b06e354d/butter.png?content_type=image%2Fpng&disposition=inline%3B+filename%3D%22butter.png%22%3B+filename%2A%3DUTF-8%27%27butter.png
+Completed 302 Found in 7ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRjSGxSY1V0blJGUmlNMUo2YVhCbVFYcGthME50WXpsM0Jqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSS9hVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGlZblYwZEdWeUxuQnVaeUk3SUdacGJHVnVZVzFsS2oxVlZFWXRPQ2NuWW5WMGRHVnlMbkJ1WndZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraURtbHRZV2RsTDNCdVp3WTdCbFE9IiwiZXhwIjoiMjAxOS0xMi0yOVQxODowMToxNy4zNDNaIiwicHVyIjoiYmxvYl9rZXkifX0=--178137f61418093401294b41b6b91396b06e354d/butter.png?content_type=image%2Fpng&disposition=inline%3B+filename%3D%22butter.png%22%3B+filename%2A%3DUTF-8%27%27butter.png" for ::1 at 2019-12-29 17:56:17 +0000
+Processing by ActiveStorage::DiskController#show as PNG
+  Parameters: {"content_type"=>"image/png", "disposition"=>"inline; filename=\"butter.png\"; filename*=UTF-8''butter.png", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRjSGxSY1V0blJGUmlNMUo2YVhCbVFYcGthME50WXpsM0Jqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSS9hVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGlZblYwZEdWeUxuQnVaeUk3SUdacGJHVnVZVzFsS2oxVlZFWXRPQ2NuWW5WMGRHVnlMbkJ1WndZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraURtbHRZV2RsTDNCdVp3WTdCbFE9IiwiZXhwIjoiMjAxOS0xMi0yOVQxODowMToxNy4zNDNaIiwicHVyIjoiYmxvYl9rZXkifX0=--178137f61418093401294b41b6b91396b06e354d", "filename"=>"butter"}
+Completed 200 OK in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/shoppings" for ::1 at 2019-12-29 17:57:19 +0000
+Processing by ShoppingsController#index as HTML
+  Rendering shoppings/index.html.erb within layouts/application
+  Rendered layouts/_flash.html.erb (0.5ms)
+  [1m[36mShopping Load (0.1ms)[0m  [1m[34mSELECT "shoppings".* FROM "shoppings"[0m
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 2], ["record_type", "Shopping"], ["name", "image"], ["LIMIT", 1]]
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  Rendered layouts/_footer.html.erb (0.3ms)
+  Rendered shoppings/index.html.erb within layouts/application (16.7ms)
+  Rendered layouts/_navBar.html.erb (1.1ms)
+Completed 200 OK in 2064ms (Views: 2055.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRjSGxSY1V0blJGUmlNMUo2YVhCbVFYcGthME50WXpsM0Jqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSS9hVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGlZblYwZEdWeUxuQnVaeUk3SUdacGJHVnVZVzFsS2oxVlZFWXRPQ2NuWW5WMGRHVnlMbkJ1WndZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraURtbHRZV2RsTDNCdVp3WTdCbFE9IiwiZXhwIjoiMjAxOS0xMi0yOVQxODowMToxNy4zNDNaIiwicHVyIjoiYmxvYl9rZXkifX0=--178137f61418093401294b41b6b91396b06e354d/butter.png?content_type=image%2Fpng&disposition=inline%3B+filename%3D%22butter.png%22%3B+filename%2A%3DUTF-8%27%27butter.png" for ::1 at 2019-12-29 17:57:21 +0000
+Processing by ActiveStorage::DiskController#show as PNG
+  Parameters: {"content_type"=>"image/png", "disposition"=>"inline; filename=\"butter.png\"; filename*=UTF-8''butter.png", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRjSGxSY1V0blJGUmlNMUo2YVhCbVFYcGthME50WXpsM0Jqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSS9hVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGlZblYwZEdWeUxuQnVaeUk3SUdacGJHVnVZVzFsS2oxVlZFWXRPQ2NuWW5WMGRHVnlMbkJ1WndZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraURtbHRZV2RsTDNCdVp3WTdCbFE9IiwiZXhwIjoiMjAxOS0xMi0yOVQxODowMToxNy4zNDNaIiwicHVyIjoiYmxvYl9rZXkifX0=--178137f61418093401294b41b6b91396b06e354d", "filename"=>"butter"}
+Completed 304 Not Modified in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/shoppings" for ::1 at 2019-12-29 17:57:25 +0000
+Processing by ShoppingsController#index as HTML
+  Rendering shoppings/index.html.erb within layouts/application
+  Rendered layouts/_flash.html.erb (0.6ms)
+  [1m[36mShopping Load (0.2ms)[0m  [1m[34mSELECT "shoppings".* FROM "shoppings"[0m
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 2], ["record_type", "Shopping"], ["name", "image"], ["LIMIT", 1]]
+  [1m[36mActiveStorage::Blob Load (0.1ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  Rendered layouts/_footer.html.erb (0.3ms)
+  Rendered shoppings/index.html.erb within layouts/application (12.6ms)
+  Rendered layouts/_navBar.html.erb (0.5ms)
+Completed 200 OK in 84ms (Views: 78.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBDdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--6ff4ada335c45a8a3c6b09110dd35003a2c7be8c/butter.png" for ::1 at 2019-12-29 17:57:25 +0000
+Processing by ActiveStorage::BlobsController#show as PNG
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBDdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--6ff4ada335c45a8a3c6b09110dd35003a2c7be8c", "filename"=>"butter"}
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+[36m  Disk Storage (0.9ms) [0m[34mGenerated URL for file at key: pyQqKgDTb3RzipfAzdkCmc9w (http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRjSGxSY1V0blJGUmlNMUo2YVhCbVFYcGthME50WXpsM0Jqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSS9hVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGlZblYwZEdWeUxuQnVaeUk3SUdacGJHVnVZVzFsS2oxVlZFWXRPQ2NuWW5WMGRHVnlMbkJ1WndZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraURtbHRZV2RsTDNCdVp3WTdCbFE9IiwiZXhwIjoiMjAxOS0xMi0yOVQxODowMjoyNS44MDFaIiwicHVyIjoiYmxvYl9rZXkifX0=--630390db8a08eebaf5ec701e642c135618033df2/butter.png?content_type=image%2Fpng&disposition=inline%3B+filename%3D%22butter.png%22%3B+filename%2A%3DUTF-8%27%27butter.png)[0m
+Redirected to http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRjSGxSY1V0blJGUmlNMUo2YVhCbVFYcGthME50WXpsM0Jqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSS9hVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGlZblYwZEdWeUxuQnVaeUk3SUdacGJHVnVZVzFsS2oxVlZFWXRPQ2NuWW5WMGRHVnlMbkJ1WndZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraURtbHRZV2RsTDNCdVp3WTdCbFE9IiwiZXhwIjoiMjAxOS0xMi0yOVQxODowMjoyNS44MDFaIiwicHVyIjoiYmxvYl9rZXkifX0=--630390db8a08eebaf5ec701e642c135618033df2/butter.png?content_type=image%2Fpng&disposition=inline%3B+filename%3D%22butter.png%22%3B+filename%2A%3DUTF-8%27%27butter.png
+Completed 302 Found in 14ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRjSGxSY1V0blJGUmlNMUo2YVhCbVFYcGthME50WXpsM0Jqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSS9hVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGlZblYwZEdWeUxuQnVaeUk3SUdacGJHVnVZVzFsS2oxVlZFWXRPQ2NuWW5WMGRHVnlMbkJ1WndZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraURtbHRZV2RsTDNCdVp3WTdCbFE9IiwiZXhwIjoiMjAxOS0xMi0yOVQxODowMjoyNS44MDFaIiwicHVyIjoiYmxvYl9rZXkifX0=--630390db8a08eebaf5ec701e642c135618033df2/butter.png?content_type=image%2Fpng&disposition=inline%3B+filename%3D%22butter.png%22%3B+filename%2A%3DUTF-8%27%27butter.png" for ::1 at 2019-12-29 17:57:25 +0000
+Processing by ActiveStorage::DiskController#show as PNG
+  Parameters: {"content_type"=>"image/png", "disposition"=>"inline; filename=\"butter.png\"; filename*=UTF-8''butter.png", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRjSGxSY1V0blJGUmlNMUo2YVhCbVFYcGthME50WXpsM0Jqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSS9hVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGlZblYwZEdWeUxuQnVaeUk3SUdacGJHVnVZVzFsS2oxVlZFWXRPQ2NuWW5WMGRHVnlMbkJ1WndZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraURtbHRZV2RsTDNCdVp3WTdCbFE9IiwiZXhwIjoiMjAxOS0xMi0yOVQxODowMjoyNS44MDFaIiwicHVyIjoiYmxvYl9rZXkifX0=--630390db8a08eebaf5ec701e642c135618033df2", "filename"=>"butter"}
+Completed 200 OK in 1ms (ActiveRecord: 0.0ms)
+
+

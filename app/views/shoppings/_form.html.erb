@@ -5,10 +5,13 @@
       <%= form_for @shop do |f| %>
         <p>
           <%= f.label :Add_item %><br />
-          <%= f.text_field :item, class: "bdr-frm" %>
+          <%= f.text_field :item, class: "bdr-frm" %><br />
+          <span clas="image"> Upload Image
+            <%= f.file_field :image %>
+          </span>
         </p>
       <p>
-        <%= f.submit "Add to shopping list", class: "btn btn-primary" %> <br /><br />
+        <%= f.submit "Add to shopping list", class: "btn btn-primary" %> <%#  binding.pry %><br /><br />
         <%= link_to "View Shopping List", shoppings_path, class: "btn btn-warning"%>
       </p>
     <% end %>

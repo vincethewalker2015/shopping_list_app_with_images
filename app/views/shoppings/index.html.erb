@@ -13,6 +13,7 @@
           </tr>
           <% @shop.each do |shoppings| %>
             <tr>
+              <td class="itemImage"><%= image_tag shoppings.image if shoppings.image.attached? %></td>
               <td class="itemsFont"><%= shoppings.item %><td>
               <td><%= link_to "Edit Item", edit_shopping_path(shoppings), class: "btn btn-primary bdr" %></td>
               <td><%= link_to "Delete Item", shopping_path(shoppings), method: :delete, data: {confirm: "Deleted" }, class: "btn btn-danger bdr" %></td>
