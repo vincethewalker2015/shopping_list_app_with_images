@@ -1,0 +1,17 @@
+<div class="center jumbotron jumboChild">
+  <h2 class="text-center">Item</h2>
+</div>
+
+<%= render "layouts/flash" %>
+<div class="well">
+<p class="itemsFont">
+  <span class="boldText">Item:</span> <%= @shop.item %>
+</p>
+
+<%= link_to "Edit this item", edit_shopping_path(@shop), class: "btn btn-warning" %> |
+<%= link_to "Back To Shopping list", shoppings_path, class: "btn btn-primary" %>
+</div>
+
+<div>
+     <%= render "layouts/footer" %>
+</div>
